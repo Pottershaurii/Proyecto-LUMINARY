@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #223958;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10.4vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 0; /* Elimina el margen inferior */
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.6px; /* Ajusta el grosor de la línea */
+    background-color: #eae8ee; /* Ajusta el color de la línea */
+  }
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #f4ede7;
+}
+
+#menu {
+    display: none;
+}
+
+.menu.icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+html {
+    scroll-behavior: smooth; /* Esto hace que el boton no sea brusco, si no se deslice */
+}
+
+.resumen {
+    padding: 100px 0    ;
+    background-color: #F9FAFC;
+}
+
+.resumen-content {
+    text-align: center;
+}
+
+.resumen-content h2 {
+    font-size: 50px;
+    line-height: 70px;
+    color: #0c1f6a;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.resumen-group {
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.call-to-action {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .call-to-action h2 {
+    font-size: 24px;
+    color: #333; /* Color del texto oscuro */
+    margin-bottom: 20px;
+  }
+  
+  .btn-contact {
+    background-color: #e68831; /* Color rosa */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+.datos {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/van2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 150px 0;
+}
+
+.datos-content {
+    text-align: center;
+}
+
+.datos-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.datos-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.datos-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.datos-1 {
+    padding: 0 20px;
+}
+
+.datos-1 img {
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 25%;
+}
+
+.datos-1 h3 {
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.datos-1 p {
+    font-size: 16px;
+    white-space: nowrap
+}
+
+.btn-datos {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #071092;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-datos:hover {
+    background-color: #1824cc;
+}
+
+.pasatiempos {
+    display: flex;
+}
+
+.pasatiempos-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #eaeaea;
+}
+
+.pasatiempos-2{
+    background-image: url(images/a.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.pasatiempos-3{
+    background-image: url(images/b.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.btn-pasatiempos {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #0c1f6a;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-pasatiempos:hover {
+    background-color: #ebad8d;
+}
+
+.viajes {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.viajes-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viajes-1 {
+    padding: 15px 55px;
+}
+
+.viajes-1 img {
+    width: 205px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.viajes-1 p {
+        margin-bottom: 0px; /* Aumenta el espacio entre párrafos */
+}
+
+.viajes-2 {
+    padding: 15px 55px;
+}
+
+.viajes-2 img {
+    width: 230px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.viajes-2 p {
+    margin-bottom: 0px; /* Aumenta el espacio entre párrafos */
+}
+
+.btn-viajes {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #0c1f6a;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-viajes:hover {
+    background-color: #223bdc;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #CE967B;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #ebad8d;
+}
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #eaccb3;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form button {
+    background-color: #eaccb3;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #eaccb3;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #ccc;
+}
+
+@media (max-width:991px){  /* Pagina responsive */
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu-icono {
+        width: 55%;
+        position: relative;
+        left: 50px;
+        display: inline-block;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .resumen {
+        padding: 30px;
+        
+    }
+
+    .resumen-content h2 {
+        padding: 0;
+        
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .resumen-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .resumen-img {
+        display: none;
+    }
+
+    .datos {
+        padding: 30px;
+    }
+
+    .datos-content p {
+        padding: 0;
+    }
+
+    .datos-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .datos-1 {
+        margin-bottom: 25px;
+    }
+
+    .pasatiempos {
+        flex-direction: column;
+    }
+
+    .pasatiempos-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .pasatiempos-2, .pasatiempos-3 {
+        display: none;
+    }
+
+    .viajes {
+        padding: 30px;
+    }
+
+    .viajes-content {
+        flex-direction: column;
+    }
+
+    .viajes-1 {
+        padding: 0;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
