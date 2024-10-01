@@ -42,7 +42,7 @@ body{
     left: 0;
     right: 0;
     height: 1.6px; /* Ajusta el grosor de la línea */
-    background-color: #eae8ee; /* Ajusta el color de la línea */
+    background-color: #ffffff; /* Ajusta el color de la línea */
   }
 
 .menu {
@@ -115,21 +115,32 @@ html {
 }
 
 .resumen {
-    padding: 100px 0    ;
+    padding: 150px 0    ;
     background-color: #F9FAFC;
 }
 
 .resumen-content {
-    text-align: center;
+    text-align: left;
+    
 }
 
 .resumen-content h2 {
-    font-size: 50px;
+    font-size: 90px;
     line-height: 70px;
     color: #0c1f6a;
     text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
+    margin: 20px 0; /* Ajusta el margen para separar los elementos */
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: calc(0.2s * var(--i)); /* Retraso escalonado */
+}
+
+.resumen-content img{
+    width: 400px;
+    border-style: none;
+    border-width: 3px;
+    border-radius: 50px;
+    margin-left: 850px;
+    position: absolute;
 }
 
 .txt-p {
@@ -151,8 +162,16 @@ html {
 .call-to-action {
     text-align: center;
     padding: 50px;
-    background-color: #f5f5f5; /* Color de fondo gris claro */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Color de fondo gris claro */
+    height: 275px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, .05);
   }
   
   .call-to-action h2 {
@@ -161,13 +180,34 @@ html {
     margin-bottom: 20px;
   }
   
+  .orange {
+    color: #e68831;
+  }
+
   .btn-contact {
     background-color: #e68831; /* Color rosa */
     color: #fff;
     padding: 15px 30px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    width: auto;
+    perspective: none;
+    text-align: center;
+    letter-spacing: 0;
+    border-style: none;
+    border-width: 3px;
+    border-radius: 50px;
+    justify-content: center;
+    align-self: auto;
+    align-items: center;
+    margin: 30px auto 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 4px 4px 12px 2px rgba(50, 33, 92, .25);
   }
 
 
@@ -434,6 +474,20 @@ p{
 .footer-bottom p {
     color: #ccc;
 }
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 @media (max-width:991px){  /* Pagina responsive */
 
