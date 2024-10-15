@@ -22,7 +22,7 @@
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#eventos">Eventos</a></li>
                     <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto">Contactanos</a></li>
                 </ul>
             </nav>
             <div class="language-selector">
@@ -43,7 +43,6 @@
     </header>
 
 
-    
     <section class="resumen" id="inicio">
         <div class="resumen-content container">
             <img src="20075.jpg" alt="Eventos">
@@ -59,19 +58,19 @@
         <h2>¡Estamos listos para llevar tu evento al <span class="orange">siguiente nivel</span>!</h2>
         <button class="btn-contact">Crea tu evento</button>
     </section>
+
     <section class="servicios" id="servicios">
-        <h2>Servicios que Ofrecemos</h2>
-        <ul>
-            <li>Planificación y logística de eventos.</li>
-            <li>Marketing digital para promoción de eventos.</li>
-            <li>Gestión de registros y asistentes.</li>
-            <li>Soporte técnico y audiovisual.</li>
-            <li>Evaluación y retroalimentación post-evento.</li>
-        </ul>
-        <p>En Luminary, estamos comprometidos a hacer que tu evento sea un éxito desde la planificación hasta la ejecución.</p>
-    </section>
-
-
+    <div class="overlay"></div>
+    <h2>Servicios que Ofrecemos</h2>
+    <ul>
+        <li>Planificación y logística de eventos.</li>
+        <li>Marketing digital para promoción de eventos.</li>
+        <li>Gestión de registros y asistentes.</li>
+        <li>Soporte técnico y audiovisual.</li>
+        <li>Evaluación y retroalimentación post-evento.</li>
+    </ul>
+    <p>En Luminary, estamos comprometidos a hacer que tu evento sea un éxito desde la planificación hasta la ejecución.</p>
+</section>
 
     <section class="eventos" id="eventos">
         <h2>Eventos Destacados</h2>
@@ -165,25 +164,41 @@
     </section>
 
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de tu Página</title>
-    <link rel="stylesheet" href="ruta/a/tu/stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+
     <section class="contacto" id="contacto">
-        <h2>Contacto</h2>
-        <form action="#" method="POST" class="contact-form">
-            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-            <input type="email" name="email" placeholder="Tu Email" required>
-            <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit" class="btn-contact">Enviar Mensaje</button>
-        </form>
-    </section>
+    <h2>Contactanos</h2>
+    <form action="#" method="POST" class="contact-form">
+        <h3>Agendar una llamada con uno de nuestros expertos</h3>
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Email" required>
+        
+        <!-- Campos adicionales para agendar una llamada -->
+        <input type="text" name="email-empresarial" placeholder="Email empresarial" required>
+        
+        <select name="pais" required>
+            <option value="" disabled selected>Seleccionar País</option>
+            <option value="Peru">Perú</option>
+            <option value="Mexico">México</option>
+            <option value="Argentina">Argentina</option>
+            <!-- Añadir más países según sea necesario -->
+        </select>
+        
+        <input type="tel" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" required>
+        
+        <label for="eventos">¿Cuántos eventos organizas anualmente?</label>
+        <select name="eventos" id="eventos" required>
+            <option value="mas10">Más de 10</option>
+            <option value="6a10">6 a 10</option>
+            <option value="2a5">2 a 5</option>
+            <option value="uno">Solo uno</option>
+        </select>
+
+        <textarea name="ayuda" placeholder="Cuéntanos más sobre tus eventos y desafíos" required></textarea>
+        
+        <!-- Botón de envío -->
+        <button type="submit" class="btn-contact">Agendar una Llamada</button>
+    </form>
+</section>
 
     <footer class="footer">
         <div class="container">
@@ -198,7 +213,7 @@
         </div>
         <br/></br>
         <div class="footer-section">
-            <h3>Universidades Colaboradoras</h3>
+            <h3>Clientes Satisfatorios</h3>
             <div class="logo-container">
                 <div class="logo-item">
                     <img src="ucv.png" alt="Logo UCV" class="logocolaborador">
