@@ -755,14 +755,14 @@ h1 {
 /*----------------------------------------------------------------------------------------------------------------------*/
 .servicios {
     padding: 100px 0;
-    background-image: url('van2.jpg');
+    background-image: url('images/van2.jpg');/* Imagen de fondo */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
-    background-blend-mode: darken; /* Mezcla el color de fondo con la imagen */
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken;
     text-align: center;
-    color: white; /* Asegura que el texto sea blanco */
+    color: white;
 }
 
 
@@ -883,7 +883,7 @@ h1 {
 /*------------------------------------------------------------------------------------------------------------*/
 .testimonios {
     padding: 100px 0;
-    background-image: url('vangogh.jpeg'); /* Imagen de fondo */
+    background-image: url('images/vangogh.jpeg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -939,7 +939,6 @@ blockquote::after {
     margin-top: 10px;
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
     .testimonios h2 {
         font-size: 40px;
@@ -1101,3 +1100,4 @@ blockquote::after {
     font-size: 14px;
     color: #464646;
 }
+/*----------------------------------------------------------------------------------------------------------------*/

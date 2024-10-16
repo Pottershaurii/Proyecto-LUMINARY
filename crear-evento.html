@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Evento</title>
+    <link rel="stylesheet" href="style02.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Crear un Nuevo Evento</h1>
+        <p>Organiza tu evento de manera rápida y sencilla. Completa el siguiente formulario con la información básica y ¡nosotros nos encargaremos del resto!</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Formulario de Creación de Evento</h2>
+        <form action="procesar-evento.php" method="post">
+            <div class="form-group">
+                <label for="nombre-evento">Nombre del Evento:</label>
+                <input type="text" id="nombre-evento" name="nombre-evento" placeholder="Ej. Conferencia de Tecnología 2024" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha-evento">Fecha del Evento:</label>
+                <input type="date" id="fecha-evento" name="fecha-evento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion-evento">Descripción del Evento:</label>
+                <textarea id="descripcion-evento" name="descripcion-evento" placeholder="Describe el propósito y los detalles principales del evento" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="lugar-evento">Lugar del Evento:</label>
+                <input type="text" id="lugar-evento" name="lugar-evento" placeholder="Ej. Lima, Perú" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hora-evento">Hora del Evento:</label>
+                <input type="time" id="hora-evento" name="hora-evento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nombre-organizador">Nombre del Organizador:</label>
+                <input type="text" id="nombre-organizador" name="nombre-organizador" placeholder="Nombre de la persona a cargo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email-organizador">Email del Organizador:</label>
+                <input type="email" id="email-organizador" name="email-organizador" placeholder="correo@example.com" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Crear Evento</button>
+                <a href="index.html" class="btn-back">Regresar a Inicio</a>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
