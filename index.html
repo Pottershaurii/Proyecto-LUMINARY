@@ -10,14 +10,13 @@
     <header class="header">
         <div class="menu container">
             <a href="" class="logo" >
-            <img src="logo.png" alt="icon" class="logo-icon"> Luminary
+            <img src="images/logo.png" alt="icon" class="logo-icon"> Luminary
             </a>
             <input type="checkbox" id="menu"/>
             <label for="menu">
-                <img src="menu.png" class="menu-icono" alt="">
+                <img src="images/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
-                <br>   
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -29,7 +28,7 @@
             <div class="language-selector">
                 <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
                 <span>ES</span>
-                <img src="flecha.svg" alt="Arrow" class="arrow-icon">
+                <img src="images/flecha.svg" alt="Arrow" class="arrow-icon">
                 <div class="dropdown">
                     <ul>
                         <li><a href="?lang=es">ES</a></li>
@@ -46,7 +45,7 @@
 
     <section class="resumen" id="inicio">
         <div class="resumen-content container">
-            <img src="20075.jpg" alt="Eventos">
+            <img src="images/20075.jpg" alt="Eventos">
             <h2>Aprende</h2>
             <h2>Crea</h2>
             <h2>Conecta</h2>
@@ -57,8 +56,9 @@
 
     <section class="call-to-action">
         <h2>¡Ilumina tu conocimiento y llevémoslo al <span class="orange">siguiente nivel</span>!</h2>
-        <button class="btn-contact">Crea tu evento</button>
+        <a href="crear-evento.html" class="btn-contact">Crea tu evento</a>
     </section>
+    
 
     <section class="servicios" id="servicios">
     <div class="overlay"></div>
@@ -74,12 +74,11 @@
     <a href="graficos.html" class="btn-contact">Ver Estadísticas de Eventos</a>
 </section>
 </section>
-
     <section class="eventos" id="eventos">
         <h2>Eventos Destacados</h2>
         <main class="tarjeta-contenedor">
             <div class="tarjeta">
-                <img src="Conferencia de Economía Circular.jpeg" alt="Conferencia de Economía Circular">
+                <img src="images/Conferencia de Economía Circular.jpeg" alt="Conferencia de Economía Circular">
                 <div class="tarjeta-contenido">
                     <h3>Conferencia de Economía Circular</h3>
                     <p><strong>Precio sugerido:</strong> S/150</p>
@@ -88,7 +87,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="Congreso de Ciberseguridad.jpg" alt="Congreso de Ciberseguridad">
+                <img src="images/Congreso de Ciberseguridad.jpg" alt="Congreso de Ciberseguridad">
                 <div class="tarjeta-contenido">
                     <h3>Congreso de Ciberseguridad</h3>
                     <p><strong>Precio sugerido:</strong> S/75</p>
@@ -97,7 +96,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="Cumbre de Salud Global y Pandemias.jpg" alt="Cumbre de Salud Global y Pandemias">
+                <img src="images/Cumbre de Salud Global y Pandemias.jpg" alt="Cumbre de Salud Global y Pandemias">
                 <div class="tarjeta-contenido">
                     <h3>Cumbre de Salud Global y Pandemias</h3>
                     <p><strong>Precio sugerido:</strong> S/200</p>
@@ -106,7 +105,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="Cumbre Mundial del Clima.jpg" alt="Cumbre Mundial del Clima">
+                <img src="images/Cumbre Mundial del Clima.jpg" alt="Cumbre Mundial del Clima">
                 <div class="tarjeta-contenido">
                     <h3>Cumbre Mundial del Clima</h3>
                     <p><strong>Precio sugerido:</strong> S/350</p>
@@ -115,7 +114,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="Foro de Energías Renovables.jpg" alt="Foro de Energías Renovables">
+                <img src="images/Foro de Energías Renovables.jpg" alt="Foro de Energías Renovables">
                 <div class="tarjeta-contenido">
                     <h3>Foro de Energías Renovables</h3>
                     <p><strong>Precio sugerido:</strong> S/100</p>
@@ -124,7 +123,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="Simposio de Inteligencia Artificial.jpg" alt="Simposio de Inteligencia Artificial">
+                <img src="images/Simposio de Inteligencia Artificial.jpg" alt="Simposio de Inteligencia Artificial">
                 <div class="tarjeta-contenido">
                     <h3>Simposio de Inteligencia Artificial</h3>
                     <p><strong>Precio sugerido:</strong> S/50</p>
@@ -175,7 +174,6 @@
         <input type="text" name="nombre" placeholder="Tu Nombre" required>
         <input type="email" name="email" placeholder="Tu Email" required>
         
-        <!-- Campos adicionales para agendar una llamada -->
         <input type="text" name="email-empresarial" placeholder="Email empresarial" required>
         
         <select name="pais" required>
@@ -183,7 +181,6 @@
             <option value="Peru">Perú</option>
             <option value="Mexico">México</option>
             <option value="Argentina">Argentina</option>
-            <!-- Añadir más países según sea necesario -->
         </select>
         
         <input type="tel" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" required>
@@ -198,7 +195,6 @@
 
         <textarea name="ayuda" placeholder="Cuéntanos más sobre tus eventos y desafíos" required></textarea>
         
-        <!-- Botón de envío -->
         <button type="submit" class="btn-contact">Agendar una Llamada</button>
     </form>
 </section>
@@ -219,23 +215,23 @@
             <h3>Clientes Satisfatorios</h3>
             <div class="logo-container">
                 <div class="logo-item">
-                    <img src="ucv.png" alt="Logo UCV" class="logocolaborador">
+                    <img src="images/ucv.png" alt="Logo UCV" class="logocolaborador">
                     <span>Universidad Cesar Vallejo</span>
                 </div>
                 <div class="logo-item">
-                    <img src="utp.png" alt="Logo UTP" class="logocolaborador">
+                    <img src="images/utp.png" alt="Logo UTP" class="logocolaborador">
                     <span>Universidad Tecnológica del Perú</span>
                 </div>
                 <div class="logo-item">
-                    <img src="uns.png" alt="Logo UNS" class="logocolaborador">
+                    <img src="images/uns.png" alt="Logo UNS" class="logocolaborador">
                     <span>Universidad Nacional del Santa</span>
                 </div>
                 <div class="logo-item">
-                    <img src="upc.png" alt="Logo UPC" class="logocolaborador">
+                    <img src="images/upc.png" alt="Logo UPC" class="logocolaborador">
                     <span>Universidad Peruana de Ciencias Aplicadas</span>
                 </div>
                 <div class="logo-item">
-                    <img src="pucp.png" alt="Logo PUCP" class="logocolaborador">
+                    <img src="images/pucp.png" alt="Logo PUCP" class="logocolaborador">
                     <span>Pontificia Universidad Católica del Perú</span>
                 </div>
             </div>
@@ -246,4 +242,10 @@
         </div>
     </footer>
     
+<<<<<<< HEAD
     <script src="ruta/a/tu/script.js"></script>
+=======
+    <script src="ruta/a/tu/script.js"></script>
+</body>
+</html>
+>>>>>>> 338b6c6c385d877b971aadb1268d742ee3cfe125
