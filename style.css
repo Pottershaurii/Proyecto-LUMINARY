@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -8,8 +8,9 @@
     list-style: none;
 }
 
+
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
@@ -59,7 +60,6 @@ body{
     color: #FFFDFC;
     font-size: 30px;
     font-weight: 800;
-    
 }
 
 .logo img.logo-icon {
@@ -70,73 +70,91 @@ body{
 }
 
 .language-selector {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
     position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    justify-content: center;    
+    gap: 5px;
 }
 
-.language-selector img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-}
-
-.language-selector span {
-    margin-right: 5px;
+.language-selector span{
     font-size: 16px;
-    color: FFFDFC;
+    vertical-align: middle;
 }
-
+  
+.language-selector img { 
+    width: 16px; 
+    height: 16px;
+    vertical-align: middle;
+}
+  
 .language-selector .dropdown {
     display: none;
     position: absolute;
-    top: 30px;
-    right: 0;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 10px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-
+  
 .language-selector .dropdown ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
+  
 .language-selector .dropdown ul li {
-    padding: 5px 10px;
+    padding: 10px;
+    cursor: pointer;
 }
+  
+.language-selector .dropdown ul li:hover {
+    background-color: #f1f1f1;
+}
+  
 
 .language-selector:hover .dropdown {
     display: block;
 }
 
-.language-selector .dropdown ul li a {
-    text-decoration: none;
-    color: black;
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-.language-selector .dropdown ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-.menu .navbar ul li {
+.navbar ul li {
     position: relative;
-    float: left;
+    display: inline-block;
 }
 
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: #FFFDFC;
-    display: block;
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    position: relative;
+    transition: all 0.3s ease;
     font-weight: 600;
 }
 
-.menu .navbar ul li a:hover{
-    color: #f4ede7;
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
+.navbar ul li a:hover::after {
+    width: 100%;
 }
 
 #menu {
@@ -271,105 +289,6 @@ html {
     box-shadow: 4px 4px 12px 2px rgba(50, 33, 92, .25);
   }
 
-
-
-.datos {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(images/van2.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        padding: 150px 0;
-}
-
-.datos-content {
-    text-align: center;
-}
-
-.datos-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.datos-content p {
-    font-size: 16px;
-    color: #c5c5c5;
-    margin-bottom: 50px;
-    padding: 0 100px;
-}
-
-.datos-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 40px;
-}
-
-.datos-1 {
-    padding: 0 20px;
-}
-
-.datos-1 img {
-    width: 200px;
-    margin-bottom: 15px;
-    border-radius: 25%;
-}
-
-.datos-1 h3 {
-    color: #eaccb3;
-    font-size: 18px;
-}
-
-.datos-1 p {
-    font-size: 16px;
-    white-space: nowrap
-}
-
-.btn-datos {
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: #071092;
-    color: #F9FAFC;
-    text-transform: uppercase;
-}
-
-.btn-datos:hover {
-    background-color: #1824cc;
-}
-
-.pasatiempos {
-    display: flex;
-}
-
-.pasatiempos-1 {
-    width: 50%;
-    padding: 100px 250px 100px 100px;
-    background-color: #eaeaea;
-}
-
-.pasatiempos-2{
-    background-image: url(images/a.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
-
-.pasatiempos-3{
-    background-image: url(images/b.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
-
 h2 {
     font-size: 55px;
     line-height: 70px;
@@ -382,80 +301,6 @@ p{
     font-size: 16px;
     color: #414247;
     margin: 25px 0 45px 0;
-}
-
-.btn-pasatiempos {
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: #0c1f6a;
-    color: #F9FAFC;
-    text-transform: uppercase;
-}
-
-.btn-pasatiempos:hover {
-    background-color: #ebad8d;
-}
-
-.viajes {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.viajes-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.viajes-1 {
-    padding: 15px 55px;
-}
-
-.viajes-1 img {
-    width: 205px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.viajes-1 p {
-        margin-bottom: 0px;
-}
-
-.viajes-2 {
-    padding: 15px 55px;
-}
-
-.viajes-2 img {
-    width: 230px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.viajes-2 p {
-    margin-bottom: 0px;
-}
-
-.btn-viajes {
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: #0c1f6a;
-    color: #F9FAFC;
-    text-transform: uppercase;
-}
-
-.btn-viajes:hover {
-    background-color: #223bdc;
-}
-
-.btn-1 {
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: #CE967B;
-    color: #F9FAFC;
-    text-transform: uppercase;
-}
-
-.btn-1:hover {
-    background-color: #ebad8d;
 }
 
 .footer {
@@ -623,49 +468,6 @@ p{
         display: none;
     }
 
-    .datos {
-        padding: 30px;
-    }
-
-    .datos-content p {
-        padding: 0;
-    }
-
-    .datos-group {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-
-    .datos-1 {
-        margin-bottom: 25px;
-    }
-
-    .pasatiempos {
-        flex-direction: column;
-    }
-
-    .pasatiempos-1 {
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .pasatiempos-2, .pasatiempos-3 {
-        display: none;
-    }
-
-    .viajes {
-        padding: 30px;
-    }
-
-    .viajes-content {
-        flex-direction: column;
-    }
-
-    .viajes-1 {
-        padding: 0;
-    }
-
     .footer .container {
         flex-direction: column;
         align-items: center;
@@ -755,14 +557,14 @@ h1 {
 /*----------------------------------------------------------------------------------------------------------------------*/
 .servicios {
     padding: 100px 0;
-    background-image: url('images/van2.jpg');/* Imagen de fondo */
+    background-image: url('images/fondo1.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.5); 
-    background-blend-mode: darken;
+    background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    background-blend-mode: darken; /* Mezcla el color de fondo con la imagen */
     text-align: center;
-    color: white;
+    color: white; /* Asegura que el texto sea blanco */
 }
 
 
@@ -883,7 +685,7 @@ h1 {
 /*------------------------------------------------------------------------------------------------------------*/
 .testimonios {
     padding: 100px 0;
-    background-image: url('images/vangogh.jpeg'); /* Imagen de fondo */
+    background-image: url('images/fondo2.jpeg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -939,6 +741,7 @@ blockquote::after {
     margin-top: 10px;
 }
 
+/* Estilos responsivos */
 @media (max-width: 768px) {
     .testimonios h2 {
         font-size: 40px;
@@ -1098,6 +901,29 @@ blockquote::after {
     display: block;
     margin-top: 5px;
     font-size: 14px;
-    color: #464646;
+    color: #ffffff;
 }
-/*----------------------------------------------------------------------------------------------------------------*/
+.video-destacado {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.video-destacado h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0c1f6a;
+}
+
+.video-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
