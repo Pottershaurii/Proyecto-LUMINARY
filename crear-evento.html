@@ -3,58 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Evento</title>
+    <title>Contáctenos</title>
     <link rel="stylesheet" href="style02.css">
-
 </head>
 <body>
 
     <header>
-        <h1>Crear un Nuevo Evento</h1>
-        <p>Organiza tu evento de manera rápida y sencilla. Completa el siguiente formulario con la información básica y ¡nosotros nos encargaremos del resto!</p>
+        <h1>Contáctenos</h1>
+        <p>Estamos aquí para ayudar y responder cualquier pregunta que pueda tener.</p>
     </header>
 
     <section class="form-section">
-        <h2>Formulario de Creación de Evento</h2>
-        <form action="procesar-evento.php" method="post">
+        <form action="procesar-formulario.php" method="post">
             <div class="form-group">
-                <label for="nombre-evento">Nombre del Evento:</label>
-                <input type="text" id="nombre-evento" name="nombre-evento" placeholder="Ej. Conferencia de Tecnología 2024" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
             </div>
 
             <div class="form-group">
-                <label for="fecha-evento">Fecha del Evento:</label>
-                <input type="date" id="fecha-evento" name="fecha-evento" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
             </div>
 
             <div class="form-group">
-                <label for="descripcion-evento">Descripción del Evento:</label>
-                <textarea id="descripcion-evento" name="descripcion-evento" placeholder="Describe el propósito y los detalles principales del evento" required></textarea>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
             </div>
 
             <div class="form-group">
-                <label for="lugar-evento">Lugar del Evento:</label>
-                <input type="text" id="lugar-evento" name="lugar-evento" placeholder="Ej. Lima, Perú" required>
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
             </div>
 
             <div class="form-group">
-                <label for="hora-evento">Hora del Evento:</label>
-                <input type="time" id="hora-evento" name="hora-evento" required>
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+                    <option value="">Seleccione su país</option>
+                    <option value="peru">Perú</option>
+                    <option value="mexico">México</option>
+                    <option value="argentina">Argentina</option>
+                    <!-- Añadir más opciones de país según sea necesario -->
+                </select>
             </div>
 
             <div class="form-group">
-                <label for="nombre-organizador">Nombre del Organizador:</label>
-                <input type="text" id="nombre-organizador" name="nombre-organizador" placeholder="Nombre de la persona a cargo" required>
+                <label for="url-sitio-web">URL del sitio web:</label>
+                <input type="url" id="url-sitio-web" name="url-sitio-web" placeholder="http://">
             </div>
 
             <div class="form-group">
-                <label for="email-organizador">Email del Organizador:</label>
-                <input type="email" id="email-organizador" name="email-organizador" placeholder="correo@example.com" required>
+                <label>¿Qué te gustaría hablar?</label>
+                <div>
+                    <input type="radio" id="ventas" name="tema" value="ventas" required>
+                    <label for="ventas">Ventas</label>
+                </div>
+                <div>
+                    <input type="radio" id="apoyo" name="tema" value="apoyo">
+                    <label for="apoyo">Apoyo</label>
+                </div>
+                <div>
+                    <input type="radio" id="facturacion" name="tema" value="facturacion">
+                    <label for="facturacion">Facturación</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="¿Cómo podemos ayudarte? Proporcione tantos detalles como sea posible."></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="consentimiento-marketing" name="consentimiento-marketing">
+                <label for="consentimiento-marketing">Doy mi consentimiento para recibir comunicaciones de marketing.</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="consentimiento-privacidad" name="consentimiento-privacidad" required>
+                <label for="consentimiento-privacidad">Confirmo que he leído y acepto la Política de Privacidad.</label>
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="btn-submit">Crear Evento</button>
-                <a href="index.html" class="btn-back">Regresar a Inicio</a>
+                <button type="submit">Enviar</button>
             </div>
         </form>
     </section>

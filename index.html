@@ -1,11 +1,11 @@
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luminary.com</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap">
-    <link rel="icon" href="images/pestaña.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <audio id="background-music" loop>
@@ -25,7 +25,8 @@
             <label for="menu">
                 <img src="images/menu.png" class="menu-icono" alt="">
             </label>
-            <nav class="navbar"> 
+            <nav class="navbar">
+                <br>   
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -37,7 +38,7 @@
             <div class="language-selector">
                 <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
                 <span>ES</span>
-                <img src="images/flecha1.svg" alt="Arrow" class="arrow-icon">
+                <img src="images/flecha.svg" alt="Arrow" class="arrow-icon">
                 <div class="dropdown">
                     <ul>
                         <li><a href="?lang=es">ES</a></li>
@@ -60,8 +61,6 @@
             <h2>Conecta</h2>
         </div>
     </section>
-
-    
 
     <section class="call-to-action">
         <h2>¡Ilumina tu conocimiento y llevémoslo al <span class="orange">siguiente nivel</span>!</h2>
@@ -177,36 +176,46 @@
 
 
     <section class="contacto" id="contacto">
-    <h2>Contactanos</h2>
-    <form action="#" method="POST" class="contact-form">
-        <h3>Agendar una llamada con uno de nuestros expertos</h3>
-        <input type="text" name="nombre" placeholder="Tu Nombre" required>
-        <input type="email" name="email" placeholder="Tu Email" required>
-        
-        <input type="text" name="email-empresarial" placeholder="Email empresarial" required>
-        
-        <select name="pais" required>
-            <option value="" disabled selected>Seleccionar País</option>
-            <option value="Peru">Perú</option>
-            <option value="Mexico">México</option>
-            <option value="Argentina">Argentina</option>
-        </select>
-        
-        <input type="tel" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" required>
-        
-        <label for="eventos">¿Cuántos eventos organizas anualmente?</label>
-        <select name="eventos" id="eventos" required>
-            <option value="mas10">Más de 10</option>
-            <option value="6a10">6 a 10</option>
-            <option value="2a5">2 a 5</option>
-            <option value="uno">Solo uno</option>
-        </select>
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST" class="contact-form">
+            <h3>Agendar una llamada con uno de nuestros expertos</h3>
+            
+            <label for="nombre">Tu Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            
+            <label for="email">Tu Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+            
+            <label for="email-empresarial">Email Empresarial</label>
+            <input type="email" id="email-empresarial" name="email-empresarial" placeholder="Ingresa tu email empresarial" required>
+            
+            <label for="pais">Seleccionar País</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>Seleccionar País</option>
+                <option value="Peru">Perú</option>
+                <option value="Mexico">México</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" required>
+            
+            <label for="eventos">¿Cuántos eventos organizas anualmente?</label>
+            <select id="eventos" name="eventos" required>
+                <option value="" disabled selected>Seleccionar Opción</option>
+                <option value="mas10">Más de 10</option>
+                <option value="6a10">6 a 10</option>
+                <option value="2a5">2 a 5</option>
+                <option value="uno">Solo uno</option>
+            </select>
+    
+            <label for="ayuda">Cuéntanos más sobre tus eventos y desafíos</label>
+            <textarea id="ayuda" name="ayuda" placeholder="Describe tus eventos y desafíos" required></textarea>
+            
+            <button type="submit" class="btn-contact">Agendar una Llamada</button>
+        </form>
+    </section>
 
-        <textarea name="ayuda" placeholder="Cuéntanos más sobre tus eventos y desafíos" required></textarea>
-        
-        <button type="submit" class="btn-contact">Agendar una Llamada</button>
-    </form>
-</section>
 
 <section class="video-destacado">
     <div class="container">
@@ -220,18 +229,23 @@
 </section>
 
     <footer class="footer">
-        <div class="footer-content container">
-            <div class="footer-social-icons">
-                <a href="https://www.facebook.com/Luminary" target="_blank">
-                    <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
-                </a>
-                <a href="https://wa.me/+51999999999" target="_blank">
-                    <img src="images/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
-                </a>
-                <a href="https://www.linkedin.com/company/luminary" target="_blank">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon">
-                </a>
+        <div class="container">
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+</div>
+
             </div>
+        </div>
         <br/></br>
         <div class="footer-section">
             <h3>Clientes Satisfatorios</h3>
@@ -258,6 +272,7 @@
                 </div>
             </div>
         </div>
+        
         
         <div class="footer-bottom">
             <p>&copy; 2024 Luminary. Todos los derechos reservados.</p>
