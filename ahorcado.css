@@ -1,0 +1,226 @@
+<<<<<<< HEAD
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hangman-container {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.word-container {
+    margin: 20px 0;
+}
+
+.letter-space {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.keyboard {
+    margin: 20px 0;
+}
+
+.keyboard button {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.keyboard button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#hangmanCanvas {
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.hint {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+}
+
+.message {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+#newGameBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newGameBtn:hover {
+    background-color: #0056b3;
+}
+
+#showHintBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+=======
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hangman-container {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.word-container {
+    margin: 20px 0;
+}
+
+.letter-space {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.keyboard {
+    margin: 20px 0;
+}
+
+.keyboard button {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.keyboard button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#hangmanCanvas {
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.hint {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+}
+
+.message {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+#newGameBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newGameBtn:hover {
+    background-color: #0056b3;
+}
+
+#showHintBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+>>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminary.com</title>
+    <link rel="stylesheet" href="C:\Users\gadie\OneDrive\Desktop\TW_Grupo9_C_Proyecto-LUMINARY\css\demo2.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST" class="contact-form">
+            <h3>Agendar una llamada con uno de nuestros expertos</h3>
+            
+            <label for="nombre">Tu Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            
+            <label for="email">Tu Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+            
+            <label for="email-empresarial">Email Empresarial</label>
+            <input type="email" id="email-empresarial" name="email-empresarial" placeholder="Ingresa tu email empresarial" required>
+            
+            <label for="pais">Seleccionar País</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>Seleccionar País</option>
+                <option value="Peru">Perú</option>
+                <option value="Mexico">México</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" pattern="^\+?\d{1,3}?\s?\d{7,14}$" required>
+            
+            <label for="eventos">¿Cuántos eventos organizas anualmente?</label>
+            <select id="eventos" name="eventos" required>
+                <option value="" disabled selected>Seleccionar Opción</option>
+                <option value="mas10">Más de 10</option>
+                <option value="6a10">6 a 10</option>
+                <option value="2a5">2 a 5</option>
+                <option value="uno">Solo uno</option>
+            </select>
+
+            <label for="ayuda">Cuéntanos más sobre tus eventos y desafíos</label>
+            <textarea id="ayuda" name="ayuda" placeholder="Describe tus eventos y desafíos" required></textarea>
+            
+            <button type="submit" class="btn-contact">Agendar una Llamada</button>
+        </form>
+    </section>
+</body>
+</html>

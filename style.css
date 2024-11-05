@@ -741,6 +741,7 @@ blockquote::after {
     margin-top: 10px;
 }
 
+/* Estilos responsivos */
 @media (max-width: 768px) {
     .testimonios h2 {
         font-size: 40px;
@@ -925,112 +926,4 @@ blockquote::after {
     display: block;
     width: 100%;
     height: auto;
-}
-/*-----*/
-@media (max-width: 1024px) and (min-width: 600px) {
-    .container {
-      padding: 20px;
-    }
-    
-    .header, .footer {
-      padding: 15px;
-      text-align: center; 
-    }
-    
-    .card {
-      width: 48%;
-      margin-bottom: 20px;
-    }
-  
-    .event {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .testimonial {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-  
-  
-  @media (max-width: 600px) {
-
-    .container {
-      padding: 10px;
-    }
-  
-    .header, .footer {
-      padding: 10px;
-      text-align: center;
-    }
-  
-    .card {
-      width: 100%;
-      margin-bottom: 15px;
-    }
-  
-    .event {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .testimonial {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .faq {
-      padding: 10px;
-      font-size: 14px;
-    }
-  }
-  .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .card {
-    width: 30%;
-    margin-bottom: 30px;
-  }
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .event, .testimonial {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .event img {
-    width: 100%;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-@media (max-width: 900px) {
-    h2 {
-        font-size: 1.8em; 
-    }
-
-    .resumen-content img {
-        max-width: 250px; 
-    }
-}
-
-
-@media (max-width: 600px) {
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .resumen-content img {
-        max-width: 200px;
-    }
 }
