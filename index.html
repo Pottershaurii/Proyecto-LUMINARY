@@ -1,14 +1,9 @@
-<html lang="en">
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luminary.com</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title data-traducible="titulo">Luminary.com</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -27,19 +22,15 @@
     </div>
 
     <audio id="background-music" loop>
-        <source src="Happy and Fun Pop Background Music For Videos.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
+        <source src="audio/Happy and Fun Pop Background Music For Videos.mp3" type="audio/mpeg">
     </audio>
 
-    <button id="toggle-music" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; background-color: #0c1f6a; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Música: Off
     <button id="toggle-music" aria-label="Toggle background music"
         style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; background-color: #0c1f6a; color: white; border: none; border-radius: 5px; cursor: pointer;">
         Música: <span data-traducible="musicaEstado">Off</span>
     </button>
     <script src="js/musicControls.js"></script>
     <header class="header">
-<<<<<<< HEAD
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
                 data-traducible="titulo">Luminary</span>
@@ -54,40 +45,7 @@
                         <li><a href="parciales/Plataforma1.html">falta</a></li>
                         <li><a href="parciales/Plataforma2.html">falta 2</a></li>
                         <li><a href="parciales/Plataforma3.html">falta 3</a></li>
-=======
-        <div class="menu container">
-            <a href="" class="logo" >
-            <img src="images/logo.png" alt="icon" class="logo-icon"> Luminary
-            </a>
-            <input type="checkbox" id="menu"/>
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-                <br>   
-            <nav class="navbar"> 
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#eventos">Eventos</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contactanos</a></li>
-                    <li><a href="ahorcado.html">MiniJuego</a></li>
                 </ul>
-            </nav>
-            <div class="language-selector">
-                <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
-                <span>ES</span>
-                <img src="images/flecha.svg" alt="Arrow" class="arrow-icon">
-                <img src="images/flecha1.svg" alt="Arrow" class="arrow-icon">
-                <div class="dropdown">
-                    <ul>
-                        <li><a href="?lang=es">ES</a></li>
-                        <li><a href="?lang=en">EN</a></li>
-                    </ul>
-                </div>
-            </div>
-                </li>
                 <li><a href="parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
                 <li>
                     <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
@@ -109,8 +67,6 @@
             <span id="idioma">ES</span>
             <img src="images/flecha.svg" alt="Arrow" class="arrow-icon">
         </div>
-        <div class="header-content container">
-            <h1></h1>
         <div>
             <a href="parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
                 data-traducible="agendaDemo">Agenda una demo</a>
@@ -118,8 +74,6 @@
                 data-traducible="iniciarSesion">Iniciar sesión</a>
         </div>
     </header>
-
-<<<<<<< HEAD
     <main>
         <section class="event-management" id="event-management">
             <div class="event-content container">
@@ -139,52 +93,12 @@
             </div>
         </section>
     </main>
-=======
-
-    <section class="resumen" id="inicio">
-        <div class="resumen-content container">
-            <img src="images/20075.jpg" alt="Eventos">
-            <h2>Aprende</h2>
-            <h2>Crea</h2>
-            <h2>Conecta</h2>
-        </div>
-    </section>
-
-    
-
-    <section class="call-to-action">
-        <h2>¡Ilumina tu conocimiento y llevémoslo al <span class="orange">siguiente nivel</span>!</h2>
-        <a href="crear-evento.html" class="btn-contact">Crea tu evento</a>
-        <button class="btn-contact">Crea tu evento</button>
-    </section>
-
-    <section class="servicios" id="servicios">
-    <div class="overlay"></div>
-    <h2>Servicios que Ofrecemos</h2>
-    <ul>
-        <li>Planificación y logística de eventos.</li>
-        <li>Marketing digital para promoción de eventos.</li>
-        <li>Gestión de registros y asistentes.</li>
-        <li>Soporte técnico y audiovisual.</li>
-        <li>Evaluación y retroalimentación post-evento.</li>
-    </ul>
-    <p>En Luminary, estamos comprometidos a hacer que tu evento sea un éxito desde la planificación hasta la ejecución.</p>
-    <a href="EventStatisticsDashboard.js" class="btn-contact">Ver Estadísticas de Eventos</a>
-    <a href="graficos.html" class="btn-contact">Ver Estadísticas de Eventos</a>
-</section>
-</section>
->>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
-
     <section class="eventos" id="eventos">
-        <h2>Eventos Destacados</h2>
         <h2 data-traducible="true">Eventos Destacados</h2>
         <main class="tarjeta-contenedor">
             <div class="tarjeta">
                 <img src="images/Conferencia de Economía Circular.jpeg" alt="Conferencia de Economía Circular">
                 <div class="tarjeta-contenido">
-                    <h3>Conferencia de Economía Circular</h3>
-                    <p><strong>Precio sugerido:</strong> S/150</p>
-                    <p><strong>Costo estimado:</strong> S/50,000 - S/100,000</p>
                     <h3 data-traducible="true">Conferencia de Economía Circular</h3>
                     <p><strong data-traducible="true">Precio sugerido:</strong> S/150</p>
                     <p><strong data-traducible="true">Costo estimado:</strong> S/50,000 - S/100,000</p>
@@ -194,9 +108,6 @@
             <div class="tarjeta">
                 <img src="images/Congreso de Ciberseguridad.jpg" alt="Congreso de Ciberseguridad">
                 <div class="tarjeta-contenido">
-                    <h3>Congreso de Ciberseguridad</h3>
-                    <p><strong>Precio sugerido:</strong> S/75</p>
-                    <p><strong>Costo estimado:</strong> S/20,000 - S/35,000</p>
                     <h3 data-traducible="true">Congreso de Ciberseguridad</h3>
                     <p><strong data-traducible="true">Precio sugerido:</strong> S/75</p>
                     <p><strong data-traducible="true">Costo estimado:</strong> S/20,000 - S/35,000</p>
@@ -206,9 +117,6 @@
             <div class="tarjeta">
                 <img src="images/Cumbre de Salud Global y Pandemias.jpg" alt="Cumbre de Salud Global y Pandemias">
                 <div class="tarjeta-contenido">
-                    <h3>Cumbre de Salud Global y Pandemias</h3>
-                    <p><strong>Precio sugerido:</strong> S/200</p>
-                    <p><strong>Costo estimado:</strong> S/75,000 - S/100,000</p>
                     <h3 data-traducible="true">Cumbre de Salud Global y Pandemias</h3>
                     <p><strong data-traducible="true">Precio sugerido:</strong> S/200</p>
                     <p><strong data-traducible="true">Costo estimado:</strong> S/75,000 - S/100,000</p>
@@ -218,9 +126,6 @@
             <div class="tarjeta">
                 <img src="images/Cumbre Mundial del Clima.jpg" alt="Cumbre Mundial del Clima">
                 <div class="tarjeta-contenido">
-                    <h3>Cumbre Mundial del Clima</h3>
-                    <p><strong>Precio sugerido:</strong> S/350</p>
-                    <p><strong>Costo estimado:</strong> S/30,000 - S/50,000</p>
                     <h3 data-traducible="true">Cumbre Mundial del Clima</h3>
                     <p><strong data-traducible="true">Precio sugerido:</strong> S/350</p>
                     <p><strong data-traducible="true">Costo estimado:</strong> S/30,000 - S/50,000</p>
@@ -230,9 +135,6 @@
             <div class="tarjeta">
                 <img src="images/Foro de Energías Renovables.jpg" alt="Foro de Energías Renovables">
                 <div class="tarjeta-contenido">
-                    <h3>Foro de Energías Renovables</h3>
-                    <p><strong>Precio sugerido:</strong> S/100</p>
-                    <p><strong>Costo estimado:</strong> S/50,000 - S/100,000</p>
                     <h3 data-traducible="true">Foro de Energías Renovables</h3>
                     <p><strong data-traducible="true">Precio sugerido:</strong> S/100</p>
                     <p><strong data-traducible="true">Costo estimado:</strong> S/50,000 - S/100,000</p>
@@ -242,9 +144,6 @@
             <div class="tarjeta">
                 <img src="images/Simposio de Inteligencia Artificial.jpg" alt="Simposio de Inteligencia Artificial">
                 <div class="tarjeta-contenido">
-                    <h3>Simposio de Inteligencia Artificial</h3>
-                    <p><strong>Precio sugerido:</strong> S/50</p>
-                    <p><strong>Costo estimado:</strong> S/25,000 - S/40,000</p>
                     <h3 data-traducible="true">Simposio de Inteligencia Artificial</h3>
                     <p><strong data-traducible="true">Precio sugerido:</strong> S/50</p>
                     <p><strong data-traducible="true">Costo estimado:</strong> S/25,000 - S/40,000</p>
@@ -252,19 +151,6 @@
             </div>
         </main>
     </section>
-
-
-
-    <section class="testimonios" id="testimonios">
-        <h2>Testimonios</h2>
-        <blockquote>
-            <p>“Luminary hizo que mi evento fuera un éxito total. La organización fue impecable.”</p>
-            <cite>- Rodrigo Potter, Organizador de Eventos</cite>
-        </blockquote>
-        <blockquote>
-            <p>“Su equipo es muy profesional y se ocupó de todos los detalles. ¡Los recomiendo!”</p>
-            <cite>- Gadiel Zuñiga, Asistente a Eventos</cite>
-        </blockquote>
     <section class="servicios" id="servicios">
         <div class="overlay"></div>
         <h2 data-traducible="true">Servicios que Ofrecemos</h2>
@@ -279,129 +165,11 @@
             planificación hasta la ejecución.</p>
         <a href="graficos.html" class="btn-contact" data-traducible="true">Ver Estadísticas de Eventos</a>
     </section>
-
-
-<<<<<<< HEAD
-    <script src="js/idioma.js"></script>
-=======
-
-    <section class="preguntas-frecuentes">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <h3>¿Qué tipo de eventos gestionan?</h3>
-            <p>Gestionamos una variedad de eventos, incluyendo conferencias, talleres y ferias comerciales.</p>
-        </div>
-        <div class="faq-item">
-            <h3>¿Cuál es el proceso de reserva?</h3>
-            <p>Simplemente completa el formulario de contacto y uno de nuestros representantes se pondrá en contacto contigo para discutir los detalles.</p>
-        </div>
-        <div class="faq-item">
-            <h3>¿Ofrecen servicios de catering?</h3>
-            <p>Sí, ofrecemos opciones de catering adaptadas a las necesidades de tu evento.</p>
-        </div>
-    </section>
-
-
-
-    <section class="contacto" id="contacto">
-        <h2>Contáctanos</h2>
-        <form action="#" method="POST" class="contact-form">
-            <h3>Agendar una llamada con uno de nuestros expertos</h3>
-            
-            <label for="nombre">Tu Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-            
-            <label for="email">Tu Email</label>
-            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
-            
-            <label for="email-empresarial">Email Empresarial</label>
-            <input type="email" id="email-empresarial" name="email-empresarial" placeholder="Ingresa tu email empresarial" required>
-            
-            <label for="pais">Seleccionar País</label>
-            <select id="pais" name="pais" required>
-                <option value="" disabled selected>Seleccionar País</option>
-                <option value="Peru">Perú</option>
-                <option value="Mexico">México</option>
-                <option value="Argentina">Argentina</option>
-            </select>
-            
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" required>
-            
-            <label for="eventos">¿Cuántos eventos organizas anualmente?</label>
-            <select id="eventos" name="eventos" required>
-                <option value="" disabled selected>Seleccionar Opción</option>
-                <option value="mas10">Más de 10</option>
-                <option value="6a10">6 a 10</option>
-                <option value="2a5">2 a 5</option>
-                <option value="uno">Solo uno</option>
-            </select>
-    
-            <label for="ayuda">Cuéntanos más sobre tus eventos y desafíos</label>
-            <textarea id="ayuda" name="ayuda" placeholder="Describe tus eventos y desafíos" required></textarea>
-            
-            <button type="submit" class="btn-contact">Agendar una Llamada</button>
-        </form>
-    </section>
-    <h2>Contactanos</h2>
-    <form action="#" method="POST" class="contact-form">
-        <h3>Agendar una llamada con uno de nuestros expertos</h3>
-        <input type="text" name="nombre" placeholder="Tu Nombre" required>
-        <input type="email" name="email" placeholder="Tu Email" required>
-        
-        <input type="text" name="email-empresarial" placeholder="Email empresarial" required>
-        
-        <select name="pais" required>
-            <option value="" disabled selected>Seleccionar País</option>
-            <option value="Peru">Perú</option>
-            <option value="Mexico">México</option>
-            <option value="Argentina">Argentina</option>
-        </select>
-        
-        <input type="tel" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" required>
-        
-        <label for="eventos">¿Cuántos eventos organizas anualmente?</label>
-        <select name="eventos" id="eventos" required>
-            <option value="mas10">Más de 10</option>
-            <option value="6a10">6 a 10</option>
-            <option value="2a5">2 a 5</option>
-            <option value="uno">Solo uno</option>
-        </select>
-
-        <textarea name="ayuda" placeholder="Cuéntanos más sobre tus eventos y desafíos" required></textarea>
-        
-        <button type="submit" class="btn-contact">Agendar una Llamada</button>
-    </form>
-</section>
-
-<section class="video-destacado">
-    <div class="container">
-        <h2>Descubre Luminary</h2>
-        <div class="video-wrapper">
-            <video width="400" controls>
-                <source src="invideo-ai-1080 ¿Qué es un evento académico y cómo funci 2024-10-18.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-</section>
->>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
-
     <footer class="footer">
         <div class="container">
             <div class="footer-section">
-                <h3>Síguenos en Redes Sociales</h3>
                 <h3 data-traducible="seguirRedes">Síguenos en Redes Sociales</h3>
                 <div class="social-icons">
-    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-    </a>
-</div>
                     <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook"><i
                             class="fab fa-facebook"></i></a>
                     <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp"><i
@@ -449,9 +217,6 @@
             </div>
         </div>
 
-=======
-=======
->>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
                     <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                     <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -459,67 +224,10 @@
             </div>
         </div>
         <br/></br>
-        <div class="footer-section">
-            <h3>Clientes Satisfatorios</h3>
-            <div class="logo-container">
-                <div class="logo-item">
-                    <img src="images/ucv.png" alt="Logo UCV" class="logocolaborador">
-                    <span>Universidad Cesar Vallejo</span>
-                </div>
-                <div class="logo-item">
-                    <img src="images/utp.png" alt="Logo UTP" class="logocolaborador">
-                    <span>Universidad Tecnológica del Perú</span>
-                </div>
-                <div class="logo-item">
-                    <img src="images/uns.png" alt="Logo UNS" class="logocolaborador">
-                    <span>Universidad Nacional del Santa</span>
-                </div>
-                <div class="logo-item">
-                    <img src="images/upc.png" alt="Logo UPC" class="logocolaborador">
-                    <span>Universidad Peruana de Ciencias Aplicadas</span>
-                </div>
-                <div class="logo-item">
-                    <img src="images/pucp.png" alt="Logo PUCP" class="logocolaborador">
-                    <span>Pontificia Universidad Católica del Perú</span>
-                </div>
-            </div>
-        </div>
-        
-        
-<<<<<<< HEAD
->>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
-=======
->>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
         <div class="footer-bottom">
-            <p>&copy; 2024 Luminary. Todos los derechos reservados.</p>
             <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
-    <script src="ruta/a/tu/script.js"></script>
-    <script>
-        const audio = document.getElementById('background-music');
-        const toggleButton = document.getElementById('toggle-music');
-        let isPlaying = false;
-
-        toggleButton.addEventListener('click', function() {
-            if (isPlaying) {
-                audio.pause();
-                toggleButton.textContent = 'Música: Off';
-            } else {
-                audio.play();
-                toggleButton.textContent = 'Música: On';
-            }
-            isPlaying = !isPlaying;
-        });
-    </script>
 </body>
-</html>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
-=======
->>>>>>> 23bb1d850c3742fe9daca25bc48a74ede589a927
 </html>
