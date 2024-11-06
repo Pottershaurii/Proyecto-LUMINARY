@@ -99,21 +99,5 @@
         </div>
     </footer>   
     <script src="../js/script.js"></script>
-    <script>
-        const audio = document.getElementById('background-music');
-        const toggleButton = document.getElementById('toggle-music');
-        let isPlaying = false;
-
-        toggleButton.addEventListener('click', function() {
-            if (isPlaying) {
-                audio.pause();
-                toggleButton.textContent = 'Música: Off';
-            } else {
-                audio.play();
-                toggleButton.textContent = 'Música: On';
-            }
-            isPlaying = !isPlaying;
-        });
-    </script>
 </body>
 </html>
