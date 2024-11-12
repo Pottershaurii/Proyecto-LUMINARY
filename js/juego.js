@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const todasLasLetrasAdivinadas = [...palabraActual].every(letra => letrasAdivinadas.has(letra));
         if (todasLasLetrasAdivinadas) {
-            mostrarMensaje('¡Felicitaciones! ¡Has ganado!', 'success');
+            mostrarMensaje('¡Felicitaciones! ¡Has ganado un descuento!', 'success');
             juegoTerminado = true;
         }
 
