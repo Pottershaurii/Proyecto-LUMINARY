@@ -1,70 +1,265 @@
-/* Estilos para la sección Contáctanos */
-.contact-section {
-    padding: 100px 0;
-    background-color: #f9f9f9;
-    text-align: center;
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-.contact-section h2 {
-    font-size: 55px;
-    color: #0c1f6a;
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+body, html {
+    height: 100%;
     font-size: 16px;
 }
 
-.contact-form button {
-    background-color: #0c1f6a;
+/* Sección de contacto */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-image: url('../images/fondo1.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Para evitar desbordamientos por imagen de fondo */
+}
+.contact-form h3 {
+    color: #000; /* Color negro */
+    font-weight: bold; /* Negrita */
+}
+
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Oscurecimiento de fondo */
+    z-index: 1;
+}
+
+/* Texto de contacto */
+.contact-text {
+    z-index: 2;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-learn-more {
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
     cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #fff;
+    color: #333;
+    transform: translateY(-5px);
+}
+
+/* Formulario de contacto */
+.contact-form {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #db1818;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-    background-color: #1a4f8c;
+.btn-submit:hover {
+    background-color: #555;
+    transform: translateY(-5px);
 }
 
+/* Estilo responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+/* Sección de Logos */
+.logo-container {
+    display: flex; /* Usamos flexbox para alinear los logos */
+    justify-content: center; /* Centra los logos en la página */
+    flex-wrap: wrap; /* Permite que los logos se envuelvan si no caben en una línea */
+    gap: 20px; /* Espacio entre los logos */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.logo-item {
+    text-align: center; /* Centra el texto dentro de cada logo */
+}
+
+.logocolaborador {
+    max-width: 100px; /* Ancho máximo del logo */
+    max-height: 50px; /* Altura máxima del logo */
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+}
+
+.logocolaborador:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.logo-item span {
+    display: block; /* Hace que el texto del logo ocupe su propia línea */
+    margin-top: 5px; /* Espacio superior */
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Sección Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.83);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow-y: auto;
+}
+
+.footer-section h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fuente del encabezado */
+    font-weight: normal; /* Peso normal para el texto */
+    font-size: 20px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio inferior */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Estilo para formularios de contacto */
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Padding interno */
+    margin: 10px 0; /* Margen vertical */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+}
+
+.contact-form button {
+    background-color: #000000; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Padding interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+
+/* Estilo para íconos sociales */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    display: flex; /* Usa flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos */
+    gap: 15px; /* Espacio entre los iconos */
+    margin-top: 20px; /* Espacio superior */
 }
 
 .social-icons a {
-    color: #0c1f6a;
-    font-size: 24px;
-    transition: color 0.3s ease;
+    color: #fff; /* Color del texto */
+    font-size: 24px; /* Tamaño de los íconos */
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
 }
 
-.social-icons a:hover {
-    color: #e68831;
-}
 
+/* Estilo para la parte inferior del footer */
 .footer-bottom {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #444;
-    font-size: 14px;
-    color: #666;
+    margin-top: 30px; /* Espacio superior */
+    padding-top: 20px; /* Padding superior */
+    border-top: 1px solid #444; /* Borde superior */
+    font-size: 14px; /* Tamaño de fuente */
 }
+
+.footer-bottom p {
+    color: #ccc; /* Color del texto */
+}
+
+
+

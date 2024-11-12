@@ -1,6 +1,6 @@
 
 body {
-    background-image: url('C:/Users/gadie/OneDrive/Desktop/TW_Grupo9_C_Proyecto-LUMINARY/images/fondo01.jpeg');
+    background-image: url('../images/fondo1.jpg');
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
