@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="EVENTO.css">
+</head>
+
+<section class="contacto" id="contacto">
+    <h1>Crea tu evento</h1>
+    <form action="#" method="POST" class="contact-form">
+        <h2>Agenda un evento con nosotros</h2>
+        <input type="text" name="nombre" placeholder="Nombre de tu evento" required>
+        <input type="date" name="Fecha" placeholder="Ingrese la Fecha" required>
+        <input type="time   " name="Hora" placeholder="Ingrese la Hora" required>
+        <input type="text" name="Evento" placeholder="Tipo evento" required>
+        
+        
+        
+        
+        <select name="Departamento" required>
+            <option value="" disabled selected>Seleccionar Departamento</option>
+            <option value="Peru">Ancash</option>
+            <option value="Mexico">Apurimac</option>
+            <option value="Argentina">Arequipa</option>
+            <option value="Argentina">Ayacucho</option>
+            <option value="Argentina">Cajamarca</option>
+            <option value="Argentina">Callao</option>
+            <option value="Argentina">Cusco</option>
+            <option value="Argentina">Huancavelica</option>
+            <option value="Argentina">Huanuco</option>
+            <option value="Argentina">Ica</option>
+            <option value="Argentina">Junín</option>
+            <option value="Argentina">La Libertad</option>
+            <option value="Argentina">Lambayeque</option>
+            <option value="Argentina">Lima</option>
+            <option value="Argentina">Loreto</option>
+            <option value="Argentina">Madre de Dios</option>
+            <option value="Argentina">Moquegua</option>
+        </select>
+
+        <select name="Espacio" required>
+            <option value="" disabled selected>Seleccionar tipo de Espacio</option>
+            <option value="Peru">Escuela</option>
+            <option value="Mexico">Universidad</option>
+            <option value="Argentina">Estadio</option>
+            <option value="Argentina">Auditorio</option>
+            <option value="Argentina">Teatro</option>
+        </select>
+
+        <input type="texto" name="lugar" placeholder="Lugar" required>
+        
+
+        <textarea name="ayuda" placeholder="Cuéntanos más sobre tu evento y desafíos" required></textarea>
+        
+        <button type="submit" class="btn-contact">Agendar una evento</button>
+        <script src="EVENTO.js"></script>
+    </form>
+</section>
