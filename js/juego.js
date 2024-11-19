@@ -130,7 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mostrar resultado
     function mostrarResultado(ganaste) {
-        mensajeResultado.textContent = ganaste ? '¡Ganaste! 🎉' : `¡Perdiste! La palabra era: ${palabraActual}`;
+        mensajeResultado.textContent = ganaste ? 'Felicitaciones! Has ganado un descuento del 18% 🎉' : `¡Perdiste! La palabra era: ${palabraActual}`;
+
         resultado.style.display = 'block';
     }
 
@@ -143,6 +144,24 @@ document.addEventListener('DOMContentLoaded', () => {
         hintDiv.textContent = pistaActual;
         hintDiv.style.display = 'block';
     };
+
+    function mostrarInstrucciones() {
+        alert("Instrucciones:\n1. Adivina la palabra seleccionando letras.\n2. Cada error reduce tus intentos.\n3. ¡Evita que el ahorcado se complete!\n4. Gana un descuento al adivinar correctamente.");
+    }
+
+    document.getElementById('nuevoJuegoBtn').onclick = iniciarJuego;
+    document.getElementById('MostrarSugerenciaBtn').onclick = () => {
+        const hintDiv = document.getElementById('pista');
+        hintDiv.textContent = pistaActual;
+        hintDiv.style.display = 'block';
+    };
+
+    // Crear botón de instrucciones
+    const botonInstrucciones = document.createElement('button');
+    botonInstrucciones.textContent = "¿Cómo Jugar?";
+    botonInstrucciones.className = "boton-instrucciones";
+    botonInstrucciones.onclick = mostrarInstrucciones;
+    document.querySelector('.contenedordeVerdugo').appendChild(botonInstrucciones);
 
     crearTeclado();
     iniciarJuego();

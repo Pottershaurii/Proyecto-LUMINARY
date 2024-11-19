@@ -121,15 +121,14 @@ body {
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 30px; /* Incrementado para mayor tamaño */
-    border-radius: 15px; /* Curvas más pronunciadas */
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
     z-index: 10;
-    font-size: 1.5rem; /* Texto más grande */
-    width: 350px; /* Ancho fijo para hacerlo más amplio */
-    max-width: 90%; /* Asegura que no se desborde en pantallas pequeñas */
+    font-size: 1.5rem;
+    width: 350px;
+    max-width: 90%;
 }
-
 
 .resultado button {
     margin-top: 10px;
@@ -139,4 +138,20 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+.boton-instrucciones {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.boton-instrucciones:hover {
+    background-color: #0056b3;
 }
