@@ -128,12 +128,27 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarTeclado();
     }
 
-    // Mostrar resultado
-    function mostrarResultado(ganaste) {
-        mensajeResultado.textContent = ganaste ? 'Felicitaciones! Has ganado un descuento del 18% 🎉' : `¡Perdiste! La palabra era: ${palabraActual}`;
+ // Array de descuentos
+const descuentos = [
+    'Felicitaciones! Has ganado un descuento del 18% 🎉',
+    '¡Bien hecho! Disfruta de un 20% de descuento en tu próxima compra! 🎉',
+    '¡Genial! Obtienes un 15% de descuento en toda la tienda! 🎉',
+    '¡Felicidades! Tienes un descuento del 25% para tu próxima compra! 🎉',
+    '¡Increíble! Has ganado un 10% de descuento. ¡Aprovéchalo! 🎉'
+];
 
-        resultado.style.display = 'block';
+function mostrarResultado(ganaste) {
+    if (ganaste) {
+        // Selecciona un descuento aleatorio
+        const descuentoAleatorio = descuentos[Math.floor(Math.random() * descuentos.length)];
+        mensajeResultado.textContent = descuentoAleatorio;
+    } else {
+        mensajeResultado.textContent = `¡Perdiste! La palabra era: ${palabraActual}`;
     }
+
+    resultado.style.display = 'block';
+}
+
 
     // Botón reiniciar
     reiniciarJuegoBtn.addEventListener('click', iniciarJuego);
