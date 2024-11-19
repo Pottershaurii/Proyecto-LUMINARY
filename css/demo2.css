@@ -23,7 +23,8 @@ body, html {
     color: #fff;
     height: 100vh;
     position: relative;
-    overflow: hidden; /* Para evitar desbordamientos por imagen de fondo */
+    overflow: hidden;
+    
 }
 .contact-form h3 {
     color: #000; /* Color negro */
@@ -45,8 +46,10 @@ body, html {
 /* Texto de contacto */
 .contact-text {
     z-index: 2;
-    max-width: 500px;
+    max-width: 700px;
     text-align: left;
+    margin: auto auto auto 50px; /* Arriba, Derecha, Abajo, Izquierda */
+
 }
 
 .contact-text h2 {
@@ -84,11 +87,27 @@ body, html {
 .contact-form {
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px;
+    padding: 20px;
     border-radius: 12px;
-    width: 350px;
+    width: 90%; /* Ocupa el 90% del contenedor */
+    max-width: 510px; /* No supera este ancho */
+    max-height: 710px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+
+}
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 10px;
+        max-width: 100%;
+    }
 }
 
 .contact-form:hover {
@@ -97,7 +116,7 @@ body, html {
 
 .contact-form label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #333;
     font-weight: bold;
 }
