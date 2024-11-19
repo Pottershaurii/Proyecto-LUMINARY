@@ -113,3 +113,30 @@ body {
     color: black;
     margin-bottom: 10px;
 }
+
+.resultado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px; /* Incrementado para mayor tamaño */
+    border-radius: 15px; /* Curvas más pronunciadas */
+    text-align: center;
+    z-index: 10;
+    font-size: 1.5rem; /* Texto más grande */
+    width: 350px; /* Ancho fijo para hacerlo más amplio */
+    max-width: 90%; /* Asegura que no se desborde en pantallas pequeñas */
+}
+
+
+.resultado button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
