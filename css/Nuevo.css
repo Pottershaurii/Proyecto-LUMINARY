@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/fondopago.jpg') no-repeat center;
+    background-size: cover;
+    color: #0D0D0D;
+    font-size: 16px;
+}
+
+.form-container {
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: rgba(35, 64, 89, 0.9); /* Fondo semi-transparente */
+    color: #F2F2F2;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border: 2px solid #65768C;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #0D0D0D;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #234059;
+    box-shadow: 0 0 5px rgba(35, 64, 89, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #234059;
+    color: #F2F2F2;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #65768C;
+}
+.form-header {
+    display: flex;
+    justify-content: flex-start;  /* Alinea el contenido a la izquierda */
+    align-items: flex-start;    /* Alinea el contenido en la parte superior */
+    position: fixed;            /* Fija el encabezado en la parte superior */
+    width: 100%;                /* Toma todo el ancho de la pantalla */
+    top: 0;                     /* Coloca el contenedor en la parte superior */
+    padding: 10px 20px;         /* Espaciado dentro del contenedor */
+}
+
+#backButton {
+    padding: 10px 20px;
+    background-color: #234059;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#backButton:hover {
+    background-color: #65768C;
+}
