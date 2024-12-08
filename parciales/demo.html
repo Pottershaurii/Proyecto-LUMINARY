@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminary.com</title>
+    <link rel="stylesheet" href="../css/demo2.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <section class="contact-section">
+        <div class="contact-text">
+            <h2>Contáctenos</h2>
+            <p class="informacion">
+                <span class="mayusculas">Potencia tus eventos con nuestra plataforma todo en uno, diseñada para simplificar la planificación y maximizar el impacto.</span><br>
+                <ul>
+                    <li>
+                        Descubre soluciones personalizadas que abordan los desafíos específicos de la organización de tus eventos, optimizando tiempo y recursos.
+                    </li>
+                    <br>
+                    <li>
+                        Participa en una demostración interactiva en vivo donde exploraremos todas las funcionalidades clave de la plataforma, desde la gestión de inscripciones hasta la creación de reportes detallados.
+                    </li>
+                    <br>
+                    <li>
+                        Aprovecha la experiencia y el soporte continuo de nuestro equipo dedicado, asegurándonos de que tu evento sea un éxito desde el inicio hasta el final.
+                    </li>
+                    <br>
+                    <li>
+                        Conecta con herramientas integradas para análisis en tiempo real, permitiéndote medir el impacto y tomar decisiones informadas al instante.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <small>
+                    Nuestra misión es ayudarte a gestionar eventos de manera eficiente, profesional y sin complicaciones. Contáctanos hoy y da el primer paso hacia una experiencia de eventos inigualable.
+                </small>
+            </p>
+            <button class="btn-learn-more">APRENDE MÁS</button>
+        </div>
+        
+        <form class="contact-form" action="#" method="POST">
+            <h3>Agendar una llamada con uno de nuestros expertos</h3>
+            <br>
+            <label for="nombre">Tu Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+            <label for="email">Tu Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+
+            <label for="email-empresarial">Email Empresarial</label>
+            <input type="email" id="email-empresarial" name="email-empresarial" placeholder="Ingresa tu email empresarial" required>
+
+            <label for="pais">Seleccionar País</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>Seleccionar País</option>
+                <option value="Peru">Perú</option>
+                <option value="Mexico">México</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono +XX(XXXXXXXXXX)" pattern="^\+?\d{1,3}?\s?\d{7,14}$" required>
+
+            <label for="ayuda">Cuéntanos más sobre tus eventos y desafíos</label>
+            <textarea id="ayuda" name="ayuda" placeholder="Describe tus eventos y desafíos" required></textarea>
+
+            <button type="submit" class="btn-submit">Agendar una Llamada</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer-section">
+            <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+            <div class="logo-container">
+                <div class="logo-item">
+                    <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                        <span>Universidad César Vallejo</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
+                        <span>Universidad Tecnológica del Perú</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
+                        <span>Universidad Nacional del Santa</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
+                        <span>Universidad Peruana de Ciencias Aplicadas</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                        <span>Pontificia Universidad Católica del Perú</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br /></br>
+        <div class="footer-bottom">
+            <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+    <script src="../js/script.js"></script>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-traducible="titulo">Luminary.com</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/diseño.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/idioma.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="videoprinc.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="audio/Happy and Fun Pop Background Music For Videos.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="toggle-music" aria-label="Toggle background music"
+        style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; background-color: #0c1f6a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Música: <span data-traducible="musicaEstado">Off</span>
+    </button>
+    <script src="js/musicControls.js"></script>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
+                data-traducible="titulo">Luminary</span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" id="plataforma-toggle" class="flecha" data-traducible="plataforma">
+                        Plataforma <img src="images/flecha.svg" alt="Flecha">
+                    </a>
+                    <ul class="subplataforma" id="subplataforma" style="display: none;">
+                        <li><a href="parciales/Plataforma1.html">falta</a></li>
+                        <li><a href="parciales/Plataforma2.html">falta 2</a></li>
+                        <li><a href="parciales/Plataforma3.html">falta 3</a></li>
+                    </ul>
+                <li><a href="parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
+                <li>
+                    <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
+                            src="images/flecha.svg" alt="Flecha"></a>
+                    <ul class="submenu" id="submenu" style="display: none;">
+                        <li><a href="parciales/recurso.html">recurso1</a></li>
+                        <li><a href="parciales/recurso2.html">Recurso 2</a></li>
+                        <li><a href="parciales/recurso3.html">Recurso 3</a></li>
+                    </ul>
+                    <script src="js/script.js"></script>
+                </li>
+                <li><a href="./parciales/Precio.html" data-traducible="precios">Precios</a></li>
+                <li><a href="parciales/juego.html" data-traducible="minijuego">Mini Juego</a></li>
+            </ul>
+        </nav>
+
+        <div class="language-selector" onclick="cambiarIdioma();">
+            <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
+            <span id="idioma">ES</span>
+            <img src="images/flecha.svg" alt="Arrow" class="arrow-icon">
+        </div>
+        <div>
+            <a href="./parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
+                data-traducible="agendaDemo">Agenda una demo</a>
+            <a href="Login.html" class="login" aria-label="Iniciar sesión" id="iniciar-sesion"
+                data-traducible="iniciarSesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <main>
+        <section class="event-management" id="event-management">
+            <div class="event-content container">
+                <h2 data-traducible="gestionEventos">Gestión de eventos</h2>
+                <div class="rotating-words">
+                    <h3 class="visible"><span class="highlight fade" data-traducible="eficaz">Eficaz</span></h3>
+                    <h3><span class="highlight fade" data-traducible="escalable">Escalable</span></h3>
+                    <h3><span class="highlight fade" data-traducible="simplificada">Simplificada</span></h3>
+                    <h3><span class="highlight fade" data-traducible="digitalizada">Digitalizada</span></h3>
+                </div>
+                <p class="event-description" data-traducible="descripcionEventos">
+                    La plataforma de gestión de eventos academicos de Luminary garantiza una experiencia fluida para
+                    los participantes, optimiza la planificación y aumenta el ROI de tus eventos.
+                </p>
+                <a href="./parciales/demo.html" class="btn-start" aria-label="Empezar"
+                    data-traducible="empezar">Empezar</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer-section">
+            <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+            <div class="logo-container">
+                <div class="logo-item">
+                    <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                        <span>Universidad César Vallejo</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/utp.png" alt="Logo UTP" class="logocolaborador">
+                        <span>Universidad Tecnológica del Perú</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/uns.png" alt="Logo UNS" class="logocolaborador">
+                        <span>Universidad Nacional del Santa</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/upc.png" alt="Logo UPC" class="logocolaborador">
+                        <span>Universidad Peruana de Ciencias Aplicadas</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                        <span>Pontificia Universidad Católica del Perú</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br /></br>
+        <div class="footer-bottom">
+            <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

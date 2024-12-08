@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminary.com</title>
+    <link rel="stylesheet" href="../css/cliente.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="../audio/Happy and Fun Pop Background Music For Videos.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="toggle-music" aria-label="Toggle background music" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; background-color: #0c1f6a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Música: <span data-traducible="musicaEstado">Off</span>
+    </button>
+    <script src="../js/musicControls.js"></script>
+    <section class="testimonios" id="testimonios">
+        <h2>Testimonios</h2>
+        <blockquote>
+            <p>“Luminary hizo que mi evento fuera un éxito total. La organización fue impecable.”</p>
+            <cite>- Rodrigo Potter, Organizador de Eventos</cite>
+        </blockquote>
+        <blockquote>
+            <p>“Su equipo es muy profesional y se ocupó de todos los detalles. ¡Los recomiendo!”</p>
+            <cite>- Gadiel Zuñiga, Asistente a Eventos</cite>
+        </blockquote>
+    </section>
+    
+    <section class="preguntas-frecuentes">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>¿Qué tipo de eventos gestionan?</h3>
+            <p>Gestionamos una variedad de eventos, incluyendo conferencias, talleres y ferias comerciales.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Cuál es el proceso de reserva?</h3>
+            <p>Simplemente completa el formulario de contacto y uno de nuestros representantes se pondrá en contacto contigo para discutir los detalles.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Ofrecen servicios de catering?</h3>
+            <p>Sí, ofrecemos opciones de catering adaptadas a las necesidades de tu evento.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3 data-traducible="seguirRedes">Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+                <div class="logo-container">
+                    <div class="logo-item">
+                        <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                            <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                            <span>Universidad César Vallejo</span>
+                        </a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                            <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
+                            <span>Universidad Tecnológica del Perú</span>
+                        </a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                            <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
+                            <span>Universidad Nacional del Santa</span>
+                        </a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                            <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
+                            <span>Universidad Peruana de Ciencias Aplicadas</span>
+                        </a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                            <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                            <span>Pontificia Universidad Católica del Perú</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
+        </div>
+    </footer>   
+    <script src="../js/script.js"></script>
+</body>
+</html>

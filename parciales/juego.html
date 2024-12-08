@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Ahorcado - Eventos Académicos</title>
+    <link rel="stylesheet" href="../css/juego.css">
+</head>
+<body>
+    <div class="contenedordeVerdugo">
+        <h1>Ahorcado - Eventos Académicos</h1>
+        <canvas id="verdugo" width="200" height="250"></canvas>
+        <div id="verdugo" width="200" height="250"></div>
+        <div>Intentos restantes: <span id="intentos">6</span></div>
+        <button id="MostrarSugerenciaBtn">Ver Pista</button>
+        <div id="pista" class="pista" style="display: none;"></div>
+        <div id="contenedordeOrdenes" class="contenedordeOrdenes"></div>
+        <div id="teclado" class="teclado"></div>
+        <div id="mensaje" class="mensaje"></div>
+        <button id="nuevoJuegoBtn">Nuevo Juego</button>
+    </div>
+    <div id="resultado" class="resultado" style="display: none;">
+        <h2 id="mensajeResultado"></h2>
+        <button id="reiniciarJuegoBtn">Jugar de Nuevo</button>
+    </div>     
+    <script src="../js/juego.js"></script>
+</body>
+
+</html>

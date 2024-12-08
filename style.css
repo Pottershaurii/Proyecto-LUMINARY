@@ -1,0 +1,213 @@
+/* Importación de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f7f7f7;
+    scroll-behavior: smooth;
+}
+
+/* Estructura General */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 10.4vh;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.6px;
+    background-color: #ffffff;
+}
+
+.logo {
+    color: #FFFDFC;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn-contact {
+    background-color: #e68831;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    box-shadow: 4px 4px 12px rgba(50, 33, 92, 0.25);
+}
+
+/* Sección de Tarjetas */
+
+
+
+.tarjeta-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tarjeta-contenido {
+    padding: 20px;
+}
+
+.tarjeta-contenido h3 {
+    font-size: 1.5em;
+    color: #0c1f6a;
+}
+
+.tarjeta-contenido p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #eaccb3;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+
+    .call-to-action h2 {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        padding: 10px 20px;
+    }
+}
