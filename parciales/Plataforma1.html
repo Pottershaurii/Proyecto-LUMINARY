@@ -1,0 +1,141 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-traducible="titulo">Luminary.com</title>
+    <link rel="stylesheet" href="../css/plataforma1.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/diseño.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+        var CLIENT_ID = 'TU_CLIENT_ID_AQUI'; // Coloca tu Client ID aquí
+        var API_KEY = 'TU_API_KEY_AQUI'; // Coloca tu API Key aquí
+        var SCOPES = 'https://www.googleapis.com/auth/calendar';
+
+        function loadCalendarAPI() {
+            gapi.load('client:auth2', initCalendar);
+        }
+
+        function initCalendar() {
+            gapi.client.init({
+                'apiKey': API_KEY,
+                'clientId': CLIENT_ID,
+                'scope': SCOPES,
+                'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest']
+            }).then(function() {
+                console.log('Autenticación de Google Calendar inicializada');
+            });
+        }
+
+        function authenticate() {
+            gapi.auth2.getAuthInstance().signIn().then(function() {
+                console.log("Usuario autenticado");
+            });
+        }
+
+        function createGoogleEvent(sessionTitle, sessionTime, speakerName, location) {
+            var event = {
+                'summary': sessionTitle,
+                'location': location,
+                'description': 'Evento académico sobre ' + sessionTitle,
+                'start': {
+                    'dateTime': sessionTime.start,
+                    'timeZone': 'America/Los_Angeles',
+                },
+                'end': {
+                    'dateTime': sessionTime.end,
+                    'timeZone': 'America/Los_Angeles',
+                },
+                'attendees': [
+                    { 'email': 'asistente1@correo.com' },
+                    { 'email': 'asistente2@correo.com' }
+                ],
+                'reminders': {
+                    'useDefault': false,
+                    'overrides': [
+                        { 'method': 'popup', 'minutes': 10 }
+                    ],
+                },
+            };
+
+            var request = gapi.client.calendar.events.insert({
+                'calendarId': 'primary',
+                'resource': event
+            });
+
+            request.execute(function(event) {
+                console.log('Evento creado en Google Calendar: ' + event.htmlLink);
+                alert("Evento añadido al calendario");
+            });
+        }
+
+    </script>
+</head>
+<body onload="loadCalendarAPI()">
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
+                data-traducible="titulo">Luminary</span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" id="plataforma-toggle" class="flecha" data-traducible="plataforma">
+                        Plataforma <img src="../images/flecha.svg" alt="Flecha">
+                    </a>
+                    <ul class="subplataforma" id="subplataforma" style="display: none;">
+                        <li><a href="../parciales/Plataforma1.html">Agenda de Eventos</a></li>
+                        <li><a href="../parciales/Plataforma2.html">Marketing y promociones de eventos</a></li>
+                        <li><a href="../parciales/Plataforma3.html">Datos y Análisis de Eventos</a></li>
+                    </ul>
+                <li><a href="../parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
+                <li>
+                    <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
+                            src="../images/flecha.svg" alt="Flecha"></a>
+                    <ul class="submenu" id="submenu" style="display: none;">
+                        <li><a href="../parciales/recurso.html">Acerca de Luminary</a></li>
+                        <li><a href="../parciales/recurso2.html">Blog</a></li>
+                    </ul>
+                    <script src="../js/script.js"></script>
+                </li>
+                <li><a href="../parciales/Precio.html" data-traducible="precios">Precios</a></li>
+                <li><a href="../parciales/juego.html" data-traducible="minijuego">Mini Juego</a></li>
+            </ul>
+            <script src="js/script.js"></script>
+
+        </nav>
+
+        <div class="language-selector" onclick="cambiarIdioma();">
+            <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
+            <span id="idioma">ES</span>
+            <img src="../images/flecha.svg" alt="Arrow" class="arrow-icon">
+        </div>
+        <div>
+            <a href="../parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
+                data-traducible="agendaDemo">Agenda una demo</a>
+            <a href="../Login.html" class="login" aria-label="Iniciar sesión" id="iniciar-sesion"
+                data-traducible="iniciarSesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <br></br>
+    <section id="agenda">
+        <div class="container">
+            <h2>Agenda de Eventos</h2>
+            <p>Organiza y visualiza tus eventos de manera fácil y profesional. Personaliza tu agenda, agrega sesiones y proporciona toda la información que tus asistentes necesitan.</p>
+
+            <div class="agenda-example">
+                <h3>Ejemplo de Agenda</h3>
+                <div class="event-session">
+                    <h4>Sesión 1: Introducción a la Plataforma</h4>
+                    <p><strong>Hora:</strong> 9:00 AM - 10:00 AM</p>
+                    <p><strong>Orador:</strong> Juan Pérez</p>
+                    <p><strong>Lugar:</strong> Sala A, Centro de Eventos</p>
+                    <button class="add-to-calendar" onclick="createGoogleEvent('Introducción a la Plataforma', {start: '2024-12-15T09:00:00', end: '2024-12-15T10:00:00'}, 'Juan Pérez', 'Sala A')">Agregar al Calendario</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

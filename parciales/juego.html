@@ -6,23 +6,67 @@
     <link rel="stylesheet" href="../css/juego.css">
 </head>
 <body>
-    <div class="contenedordeVerdugo">
-        <h1>Ahorcado - Eventos Académicos</h1>
-        <canvas id="verdugo" width="200" height="250"></canvas>
-        <div id="verdugo" width="200" height="250"></div>
-        <div>Intentos restantes: <span id="intentos">6</span></div>
-        <button id="MostrarSugerenciaBtn">Ver Pista</button>
-        <div id="pista" class="pista" style="display: none;"></div>
-        <div id="contenedordeOrdenes" class="contenedordeOrdenes"></div>
-        <div id="teclado" class="teclado"></div>
-        <div id="mensaje" class="mensaje"></div>
-        <button id="nuevoJuegoBtn">Nuevo Juego</button>
+    <!-- Modal de Registro Inicial -->
+    <div id="initialRegistrationModal" class="modal" style="display:block;">
+        <div class="modal-content">
+            <h2>Bienvenido al Juego de Ahorcado</h2>
+            <form id="initialUserRegistrationForm">
+                <input type="text" id="initialPlayerName" placeholder="Ingresa tu nombre" required>
+                <button type="submit">Comenzar Juego</button>
+            </form>
+        </div>
     </div>
-    <div id="resultado" class="resultado" style="display: none;">
-        <h2 id="mensajeResultado"></h2>
-        <button id="reiniciarJuegoBtn">Jugar de Nuevo</button>
-    </div>     
-    <script src="../js/juego.js"></script>
-</body>
 
+    <div id="gameContainer" style="display:none;">
+        <div class="contenedordeVerdugo">
+            <h1>Ahorcado - Eventos Académicos</h1>
+            <canvas id="verdugo" width="200" height="250"></canvas>
+            <div>Intentos restantes: <span id="intentos">6</span></div>
+            <button id="MostrarSugerenciaBtn">Ver Pista</button>
+            <div id="pista" class="pista" style="display: none;"></div>
+            <div id="contenedordeOrdenes" class="contenedordeOrdenes"></div>
+            <div id="teclado" class="teclado"></div>
+            <div id="mensaje" class="mensaje"></div>
+            <button id="nuevoJuegoBtn">Nuevo Juego</button>
+        </div>
+        
+        <!-- Resultado Modal -->
+        <div id="resultado" class="resultado" style="display: none;">
+            <h2 id="mensajeResultado"></h2>
+            <button id="reiniciarJuegoBtn">Jugar de Nuevo</button>
+        </div>     
+
+        <!-- Leaderboard Section -->
+        <div class="leaderboard-container">
+            <h2>Tabla de Clasificación</h2>
+            <div id="leaderboard"></div>
+        </div>
+    </div>
+
+    <script src="../js/juego.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const initialRegistrationModal = document.getElementById('initialRegistrationModal');
+            const initialUserRegistrationForm = document.getElementById('initialUserRegistrationForm');
+            const initialPlayerNameInput = document.getElementById('initialPlayerName');
+            const gameContainer = document.getElementById('gameContainer');
+
+            initialUserRegistrationForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const playerName = initialPlayerNameInput.value.trim();
+                
+                if (playerName) {
+                    // Guardar nombre de usuario en localStorage
+                    localStorage.setItem('gameUsername', playerName);
+                    
+                    // Ocultar modal inicial
+                    initialRegistrationModal.style.display = 'none';
+                    
+                    // Mostrar contenedor del juego
+                    gameContainer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
 </html>

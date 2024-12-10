@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing y Promociones de Eventos | Luminary.com</title>
+    <link rel="stylesheet" href="../css/plataforma2.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/diseño.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    
+
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
+                data-traducible="titulo">Luminary</span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" id="plataforma-toggle" class="flecha" data-traducible="plataforma">
+                        Plataforma <img src="../images/flecha.svg" alt="Flecha">
+                    </a>
+                    <ul class="subplataforma" id="subplataforma" style="display: none;">
+                        <li><a href="../parciales/Plataforma1.html">Agenda de Eventos</a></li>
+                        <li><a href="../parciales/Plataforma2.html">Marketing y promociones de eventos</a></li>
+                        <li><a href="../parciales/Plataforma3.html">Datos y Análisis de Eventos</a></li>
+                    </ul>
+                <li><a href="../parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
+                <li>
+                    <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
+                            src="../images/flecha.svg" alt="Flecha"></a>
+                    <ul class="submenu" id="submenu" style="display: none;">
+                        <li><a href="../parciales/recurso.html">Acerca de Luminary</a></li>
+                        <li><a href="../parciales/recurso2.html">Blog</a></li>
+                    </ul>
+                    <script src="../js/script.js"></script>
+                </li>
+                <li><a href="../parciales/Precio.html" data-traducible="precios">Precios</a></li>
+                <li><a href="../parciales/juego.html" data-traducible="minijuego">Mini Juego</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="language-selector" onclick="cambiarIdioma();">
+            <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
+            <span id="idioma">ES</span>
+            <img src="../images/flecha.svg" alt="Arrow" class="arrow-icon">
+        </div>
+        <div>
+            <a href="../parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
+                data-traducible="agendaDemo">Agenda una demo</a>
+            <a href="../Login.html" class="login" aria-label="Iniciar sesión" id="iniciar-sesion"
+                data-traducible="iniciarSesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <br></br>
+    <section id="marketing">
+        <div class="container">
+            <h1>Impulsa tu Evento con Marketing y Promociones Efectivas</h1>
+            <p>Descubre cómo podemos ayudarte a aumentar la visibilidad de tu evento y atraer más participantes. Desde la creación de campañas promocionales hasta la gestión de estrategias en redes sociales, tenemos todo cubierto.</p>
+            
+            <div class="promo-strategies">
+                <div class="strategy">
+                    <h2>Campañas de Redes Sociales</h2>
+                    <p>Utiliza las plataformas más populares como Facebook, Instagram y LinkedIn para crear campañas que conecten directamente con tu audiencia.</p>
+                    <button class="cta-button">¡Comienza tu campaña!</button>
+                </div>
+                <div class="strategy">
+                    <h2>Email Marketing</h2>
+                    <p>Llega a los asistentes potenciales con boletines informativos y actualizaciones personalizadas sobre tu evento.</p>
+                    <button class="cta-button">Más información</button>
+                </div>
+                <div class="strategy">
+                    <h2>Publicidad Digital</h2>
+                    <p>Promociona tu evento a través de anuncios pagados en Google y otras plataformas para llegar a un público más amplio.</p>
+                    <button class="cta-button">Descubre más</button>
+                </div>
+            </div>
+
+            <div class="cta-footer">
+                <h3>¡Lleva tu evento al siguiente nivel!</h3>
+                <p>Contáctanos para obtener más detalles y empezar a crear una estrategia de marketing personalizada para tu evento.</p>
+                <button class="cta-button">Contactar ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer-section">
+            <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+            <div class="logo-container">
+                <div class="logo-item">
+                    <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                        <span>Universidad César Vallejo</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
+                        <span>Universidad Tecnológica del Perú</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
+                        <span>Universidad Nacional del Santa</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
+                        <span>Universidad Peruana de Ciencias Aplicadas</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                        <span>Pontificia Universidad Católica del Perú</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br /></br>
+        <div class="footer-bottom">
+            <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

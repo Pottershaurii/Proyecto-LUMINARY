@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2; 
+    color: #0D0D0D; 
+}
+
+header {
+    background-color: #234059;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.83);
+    z-index: 1000;
+}
+
+.submenu li {
+    list-style: none; 
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: #F2F2F2; 
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.23); 
+}
+
+.navbar li:hover .submenu {
+    display: block;
+}
+.subplataforma {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.83);
+    z-index: 1000;
+}
+
+.subplataforma li {
+    list-style: none; 
+}
+
+.subplataforma li a {
+    display: block;
+    padding: 10px;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.subplataforma li a:hover {
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+.navbar li:hover .subplataforma {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .submenu, .subplataforma {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.hero {
+    background-color: #65768C; 
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.about {
+    background-color: #8D98A6; 
+    color: #0D0D0D;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #0D0D0D;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #234059;
+    color: #F2F2F2;
+}
+
+form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0D0D0D;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #234059;
+    color: #F2F2F2;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #65768C;
+}
+
+/* Sección de Logos */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.logo-item {
+    text-align: center;
+}
+
+.logocolaborador {
+    max-width: 100px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+.logocolaborador:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.logo-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.83);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow-y: auto;
+}
+
+.footer-section h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #ccc;
+}

@@ -34,6 +34,73 @@ document.addEventListener('DOMContentLoaded', () => {
     const mensajeResultado = document.getElementById('mensajeResultado');
     const reiniciarJuegoBtn = document.getElementById('reiniciarJuegoBtn');
 
+    // Descuentos Array
+    const descuentos = [
+        'Felicitaciones! Has ganado un descuento del 18% 🎉',
+        '¡Bien hecho! Disfruta de un 20% de descuento en tu próxima compra! 🎉',
+        '¡Genial! Obtienes un 15% de descuento en toda la tienda! 🎉',
+        '¡Felicidades! Tienes un descuento del 25% para tu próxima compra! 🎉',
+        '¡Increíble! Has ganado un 10% de descuento. ¡Aprovéchalo! 🎉'
+    ];
+
+    // Función para guardar jugador en el ranking
+    function savePlayerToLeaderboard(ganaste) {
+        // Obtener nombre de usuario desde localStorage
+        const playerName = localStorage.getItem('gameUsername') || 'Jugador Anónimo';
+
+        // Si ganó el juego, registrarlo en el ranking
+        if (ganaste) {
+            // Obtener ranking existente o crear nuevo
+            let leaderboard = JSON.parse(localStorage.getItem('hangmanLeaderboard')) || [];
+            
+            // Agregar nueva entrada de jugador
+            leaderboard.push({
+                name: playerName,
+                word: palabraActual,
+                date: new Date().toLocaleString()
+            });
+
+            // Ordenar ranking por más reciente
+            leaderboard.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            // Limitar ranking a las 10 últimas entradas
+            leaderboard = leaderboard.slice(0, 10);
+
+            // Guardar de vuelta en localStorage
+            localStorage.setItem('hangmanLeaderboard', JSON.stringify(leaderboard));
+        }
+    }
+
+    // Función para mostrar ranking
+    function displayLeaderboard() {
+        const leaderboard = JSON.parse(localStorage.getItem('hangmanLeaderboard')) || [];
+        const leaderboardHTML = leaderboard.map((entry, index) => 
+            `<tr>
+                <td>${index + 1}</td>
+                <td>${entry.name}</td>
+                <td>${entry.word}</td>
+                <td>${entry.date}</td>
+            </tr>`
+        ).join('');
+
+        const leaderboardContainer = document.getElementById('leaderboard');
+        if (leaderboardContainer) {
+            leaderboardContainer.innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Palabra</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>${leaderboardHTML}</tbody>
+                </table>
+            `;
+        }
+    }
+
     // Dibujar ahorcado
     function dibujarAhorcado(intentos) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -128,30 +195,29 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarTeclado();
     }
 
- // Array de descuentos
-const descuentos = [
-    'Felicitaciones! Has ganado un descuento del 18% 🎉',
-    '¡Bien hecho! Disfruta de un 20% de descuento en tu próxima compra! 🎉',
-    '¡Genial! Obtienes un 15% de descuento en toda la tienda! 🎉',
-    '¡Felicidades! Tienes un descuento del 25% para tu próxima compra! 🎉',
-    '¡Increíble! Has ganado un 10% de descuento. ¡Aprovéchalo! 🎉'
-];
+    // Mostrar resultado
+    function mostrarResultado(ganaste) {
+        // Guardar en ranking antes de mostrar el resultado
+        savePlayerToLeaderboard(ganaste);
 
-function mostrarResultado(ganaste) {
-    if (ganaste) {
-        // Selecciona un descuento aleatorio
-        const descuentoAleatorio = descuentos[Math.floor(Math.random() * descuentos.length)];
-        mensajeResultado.textContent = descuentoAleatorio;
-    } else {
-        mensajeResultado.textContent = `¡Perdiste! La palabra era: ${palabraActual}`;
+        if (ganaste) {
+            const descuentoAleatorio = descuentos[Math.floor(Math.random() * descuentos.length)];
+            mensajeResultado.textContent = descuentoAleatorio;
+        } else {
+            mensajeResultado.textContent = `¡Perdiste! La palabra era: ${palabraActual}`;
+        }
+
+        resultado.style.display = 'block';
+        
+        // Actualizar tabla de clasificación
+        displayLeaderboard();
     }
 
-    resultado.style.display = 'block';
-}
-
-
     // Botón reiniciar
-    reiniciarJuegoBtn.addEventListener('click', iniciarJuego);
+    reiniciarJuegoBtn.addEventListener('click', () => {
+        iniciarJuego();
+        resultado.style.display = 'none';
+    });
 
     // Mostrar pista
     document.getElementById('MostrarSugerenciaBtn').onclick = () => {
@@ -160,24 +226,23 @@ function mostrarResultado(ganaste) {
         hintDiv.style.display = 'block';
     };
 
+    // Instrucciones del juego
     function mostrarInstrucciones() {
         alert("Instrucciones:\n1. Adivina la palabra seleccionando letras.\n2. Cada error reduce tus intentos.\n3. ¡Evita que el ahorcado se complete!\n4. Gana un descuento al adivinar correctamente.");
     }
 
+    // Botón nuevo juego
     document.getElementById('nuevoJuegoBtn').onclick = iniciarJuego;
-    document.getElementById('MostrarSugerenciaBtn').onclick = () => {
-        const hintDiv = document.getElementById('pista');
-        hintDiv.textContent = pistaActual;
-        hintDiv.style.display = 'block';
-    };
 
-    // Crear botón de instrucciones
+    // Botón de instrucciones
     const botonInstrucciones = document.createElement('button');
     botonInstrucciones.textContent = "¿Cómo Jugar?";
     botonInstrucciones.className = "boton-instrucciones";
     botonInstrucciones.onclick = mostrarInstrucciones;
     document.querySelector('.contenedordeVerdugo').appendChild(botonInstrucciones);
 
+    // Inicialización
     crearTeclado();
     iniciarJuego();
+    displayLeaderboard();
 });

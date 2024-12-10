@@ -1,22 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luminary.com</title>
     <link rel="stylesheet" href="../css/cliente.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/diseño.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
 </head>
+
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
+                data-traducible="titulo">Luminary</span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" id="plataforma-toggle" class="flecha" data-traducible="plataforma">
+                        Plataforma <img src="../images/flecha.svg" alt="Flecha">
+                    </a>
+                    <ul class="subplataforma" id="subplataforma" style="display: none;">
+                        <li><a href="../parciales/Plataforma1.html">Agenda de Eventos</a></li>
+                        <li><a href="../parciales/Plataforma2.html">Marketing y promociones de eventos</a></li>
+                        <li><a href="../parciales/Plataforma3.html">Datos y Análisis de Eventos</a></li>
+                    </ul>
+                <li><a href="../parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
+                <li>
+                    <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
+                            src="../images/flecha.svg" alt="Flecha"></a>
+                    <ul class="submenu" id="submenu" style="display: none;">
+                        <li><a href="../parciales/recurso.html">Acerca de Luminary</a></li>
+                        <li><a href="../parciales/recurso2.html">Blog</a></li>
+                    </ul>
+                    <script src="../js/script.js"></script>
+                </li>
+                <li><a href="../parciales/Precio.html" data-traducible="precios">Precios</a></li>
+                <li><a href="../parciales/juego.html" data-traducible="minijuego">Mini Juego</a></li>
+            </ul>
+        </nav>
+
+        <div class="language-selector" onclick="cambiarIdioma();">
+            <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
+            <span id="idioma">ES</span>
+            <img src="../images/flecha.svg" alt="Arrow" class="arrow-icon">
+        </div>
+        <div>
+            <a href="../parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
+                data-traducible="agendaDemo">Agenda una demo</a>
+            <a href="../Login.html" class="login" aria-label="Iniciar sesión" id="iniciar-sesion"
+                data-traducible="iniciarSesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <br></br>
+</body>
 <body>
     <audio id="background-music" loop>
         <source src="../audio/Happy and Fun Pop Background Music For Videos.mp3" type="audio/mpeg">
     </audio>
 
-    <button id="toggle-music" aria-label="Toggle background music" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; background-color: #0c1f6a; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    <button id="toggle-music" aria-label="Toggle background music"
+        style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; background-color: #0c1f6a; color: white; border: none; border-radius: 5px; cursor: pointer;">
         Música: <span data-traducible="musicaEstado">Off</span>
     </button>
     <script src="../js/musicControls.js"></script>
+
+    <section class="clientes">
+        <div class="sectores-clientes">
+            <h3>Trabajamos con Diversos Sectores</h3>
+            <p>Nos enorgullece haber trabajado con clientes de diferentes industrias, incluyendo:</p>
+            <ul>
+                <li><strong>Educación</strong> - Universidades, colegios y centros de formación.</li>
+                <li><strong>Salud</strong> - Clínicas, hospitales y eventos de salud.</li>
+                <li><strong>Tecnología</strong> - Empresas de software y startups tecnológicas.</li>
+                <li><strong>Entretenimiento</strong> - Eventos y festivales culturales.</li>
+            </ul>
+        </div>
+
+        <div class="cifras-exito">
+            <h3>Impacto de Nuestros Servicios</h3>
+            <p>Más de <strong>200 eventos</strong> organizados con un índice de satisfacción del <strong>98%</strong>.
+            </p>
+        </div>
+    </section>
+
     <section class="testimonios" id="testimonios">
         <h2>Testimonios</h2>
         <blockquote>
@@ -28,7 +101,7 @@
             <cite>- Gadiel Zuñiga, Asistente a Eventos</cite>
         </blockquote>
     </section>
-    
+
     <section class="preguntas-frecuentes">
         <h2>Preguntas Frecuentes</h2>
         <div class="faq-item">
@@ -37,67 +110,74 @@
         </div>
         <div class="faq-item">
             <h3>¿Cuál es el proceso de reserva?</h3>
-            <p>Simplemente completa el formulario de contacto y uno de nuestros representantes se pondrá en contacto contigo para discutir los detalles.</p>
+            <p>Simplemente completa el formulario de contacto y uno de nuestros representantes se pondrá en contacto
+                contigo para discutir los detalles.</p>
         </div>
         <div class="faq-item">
             <h3>¿Ofrecen servicios de catering?</h3>
             <p>Sí, ofrecemos opciones de catering adaptadas a las necesidades de tu evento.</p>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-section">
-                <h3 data-traducible="seguirRedes">Síguenos en Redes Sociales</h3>
+                <h3>Síguenos en Redes Sociales</h3>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
-                <div class="logo-container">
-                    <div class="logo-item">
-                        <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
-                            <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
-                            <span>Universidad César Vallejo</span>
-                        </a>
-                    </div>
-                    <div class="logo-item">
-                        <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
-                            <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
-                            <span>Universidad Tecnológica del Perú</span>
-                        </a>
-                    </div>
-                    <div class="logo-item">
-                        <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
-                            <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
-                            <span>Universidad Nacional del Santa</span>
-                        </a>
-                    </div>
-                    <div class="logo-item">
-                        <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
-                            <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
-                            <span>Universidad Peruana de Ciencias Aplicadas</span>
-                        </a>
-                    </div>
-                    <div class="logo-item">
-                        <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
-                            <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
-                            <span>Pontificia Universidad Católica del Perú</span>
-                        </a>
-                    </div>
-                    
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
+        <br/>
+        <div class="footer-section">
+            <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+            <div class="logo-container">
+                <div class="logo-item">
+                    <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                        <span>Universidad César Vallejo</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
+                        <span>Universidad Tecnológica del Perú</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
+                        <span>Universidad Nacional del Santa</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
+                        <span>Universidad Peruana de Ciencias Aplicadas</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                        <span>Pontificia Universidad Católica del Perú</span>
+                    </a>
+                </div>
 
+            </div>
+        </div>
+        </div>
+        <br /></br>
         <div class="footer-bottom">
             <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
         </div>
-    </footer>   
-    <script src="../js/script.js"></script>
+    </footer>
 </body>
+    <script src="../js/script.js"></script>
 </html>

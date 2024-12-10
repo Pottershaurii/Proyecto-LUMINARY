@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro para Juego de Ahorcado</title>
+    <link rel="stylesheet" href="../css/juego.css">
+    <style>
+        .registration-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+        .registration-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .registration-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .registration-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Registro para Juego de Ahorcado</h2>
+        <form id="registrationForm">
+            <input type="text" id="username" placeholder="Ingresa tu nombre de usuario" required>
+            <button type="submit">Comenzar Juego</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            
+            if (username) {
+                // Guardar nombre de usuario en localStorage
+                localStorage.setItem('hangmanUsername', username);
+                
+                // Redirigir a la página del juego
+                window.location.href = 'juego.html';
+            }
+        });
+
+        // Verificar si ya hay un nombre de usuario guardado y redirigir
+        window.addEventListener('load', function() {
+            const storedUsername = localStorage.getItem('hangmanUsername');
+            if (storedUsername) {
+                window.location.href = 'juego.html';
+            }
+        });
+    </script>
+</body>
+</html>

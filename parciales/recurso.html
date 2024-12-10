@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acerca de Luminary</title>
+    <link rel="stylesheet" href="../css/recurso.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/diseño.css">
+    <script src="../js/recurso.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
+                data-traducible="titulo">Luminary</span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" id="plataforma-toggle" class="flecha" data-traducible="plataforma">
+                        Plataforma <img src="../images/flecha.svg" alt="Flecha">
+                    </a>
+                    <ul class="subplataforma" id="subplataforma" style="display: none;">
+                        <li><a href="../parciales/Plataforma1.html">Agenda de Eventos</a></li>
+                        <li><a href="../parciales/Plataforma2.html">Marketing y promociones de eventos</a></li>
+                        <li><a href="../parciales/Plataforma3.html">Datos y Análisis de Eventos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
+                <li>
+                    <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
+                            src="../images/flecha.svg" alt="Flecha"></a>
+                    <ul class="submenu" id="submenu" style="display: none;">
+                        <li><a href="../parciales/recurso.html">Acerca de Luminary</a></li>
+                        <li><a href="../parciales/recurso2.html">Blog</a></li>
+                    </ul>
+                    <script src="../js/script.js"></script>
+
+                </li>
+                <li><a href="../parciales/Precio.html" data-traducible="precios">Precios</a></li>
+                <li><a href="../parciales/juego.html" data-traducible="minijuego">Mini Juego</a></li>
+            </ul>
+        </nav>
+        
+
+        <div class="language-selector" onclick="cambiarIdioma();">
+            <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
+            <span id="idioma">ES</span>
+            <img src="../images/flecha.svg" alt="Arrow" class="arrow-icon">
+        </div>
+        <div>
+            <a href="../parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
+                data-traducible="agendaDemo">Agenda una demo</a>
+            <a href="../Login.html" class="login" aria-label="Iniciar sesión" id="iniciar-sesion"
+                data-traducible="iniciarSesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <br></br>
+    <section class="hero">
+        <h1>Acerca de Luminary</h1>
+        <p>Somos la mejor plataforma para la gestión de eventos, ofreciendo una experiencia única e inolvidable.</p>
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <h2>¿Quiénes somos?</h2>
+            <p>Luminary es una plataforma que brinda soluciones innovadoras para la organización de eventos, desde conferencias hasta celebraciones privadas.</p>
+
+            <h2>Nuestro enfoque</h2>
+            <p>Combinamos tecnología avanzada y un equipo de expertos para ayudarte a realizar eventos perfectos.</p>
+
+            <h2>Servicios Ofrecidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gestión de Eventos</td>
+                        <td>Desde la planificación hasta la ejecución, te ayudamos en cada paso.</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Promocionamos tus eventos para maximizar la asistencia.</td>
+                    </tr>
+                    <tr>
+                        <td>Análisis de Datos</td>
+                        <td>Proporcionamos análisis detallados sobre el impacto de tus eventos.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Contacto</h2>
+            <form action="#" method="post" id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer-section">
+            <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+            <div class="logo-container">
+                <div class="logo-item">
+                    <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                        <span>Universidad César Vallejo</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
+                        <span>Universidad Tecnológica del Perú</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
+                        <span>Universidad Nacional del Santa</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
+                        <span>Universidad Peruana de Ciencias Aplicadas</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                        <span>Pontificia Universidad Católica del Perú</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br /></br>
+        <div class="footer-bottom">
+            <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,155 +1,27 @@
-/* Estilo para el encabezado */
-.header {
-    display: flex; /* Usamos flexbox para alinear los elementos en línea */
-    justify-content: space-between; /* Espacia los elementos a los extremos */
-    align-items: center; /* Centra verticalmente los elementos */
-    position: fixed; /* Fija el encabezado en la parte superior */
-    top: 0; /* Alinea el encabezado en la parte superior */
-    left: 0; /* Alinea el encabezado a la izquierda */
-    right: 0; /* Alinea el encabezado a la derecha */
-    height: 70px; /* Altura del encabezado */
-    background-color: rgba(0, 0, 0, 0.83);
-    padding: 0 20px; /* Padding horizontal */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
 
-}
 
-/* Navegación */
-.navbar ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Usa flexbox para alinear los elementos de la lista en línea */
-}
 
-.navbar ul li {
-    margin-right: 30px; /* Espacio entre elementos */
-}
 
-.navbar ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: white; /* Color del texto */
-    font-weight: bold; /* Aplica negrita al texto */
-}
 
-/* Sección de llamada a la acción */
+
+
+
 .call-to-action {
-    text-align: center; /* Centra el texto */
-    padding: 50px 0; /* Padding superior e inferior */
-    background-color: #0c1f6a; /* Color de fondo de la sección */
-    color: white; /* Color del texto */
+    text-align: center;
+    padding: 50px 0;
+    background-color: #0c1f6a;
+    color: white;
 }
 
 .call-to-action h2 {
-    font-size: 36px; /* Tamaño de fuente del encabezado */
-    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-/* Clase para color naranja */
 .orange {
-    color: orange; /* Color del texto */
+    color: orange;
 }
 
-/* Sección de Logos */
-.logo-container {
-    display: flex; /* Usamos flexbox para alinear los logos */
-    justify-content: center; /* Centra los logos en la página */
-    flex-wrap: wrap; /* Permite que los logos se envuelvan si no caben en una línea */
-    gap: 20px; /* Espacio entre los logos */
-    margin-top: 10px; /* Espacio superior */
-}
 
-.logo-item {
-    text-align: center; /* Centra el texto dentro de cada logo */
-}
 
-.logocolaborador {
-    max-width: 100px; /* Ancho máximo del logo */
-    max-height: 50px; /* Altura máxima del logo */
-    width: auto; /* Ancho automático */
-    height: auto; /* Altura automática */
-}
 
-.logocolaborador:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
-    transition: transform 0.3s ease; /* Transición suave al hacer hover */
-}
-
-.logo-item span {
-    display: block; /* Hace que el texto del logo ocupe su propia línea */
-    margin-top: 5px; /* Espacio superior */
-    font-size: 14px; /* Tamaño de la fuente */
-    color: #ffffff; /* Color del texto */
-}
-
-/* Sección Footer */
-.footer {
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    margin: 0;
-    position: relative;
-    overflow-y: auto;
-}
-
-.footer-section h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fuente del encabezado */
-    font-weight: normal; /* Peso normal para el texto */
-    font-size: 20px; /* Tamaño de fuente */
-    margin-bottom: 20px; /* Espacio inferior */
-    color: #ffffff; /* Color del texto */
-}
-
-/* Estilo para formularios de contacto */
-.contact-form input,
-.contact-form textarea {
-    width: 100%; /* Ancho completo */
-    padding: 10px; /* Padding interno */
-    margin: 10px 0; /* Margen vertical */
-    border-radius: 5px; /* Bordes redondeados */
-    border: none; /* Sin borde */
-}
-
-.contact-form button {
-    background-color: #eaccb3; /* Color de fondo del botón */
-    color: #333; /* Color del texto */
-    padding: 10px 20px; /* Padding interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
-}
-
-.contact-form button:hover {
-    background-color: #fff; /* Cambia el color de fondo al hacer hover */
-}
-
-/* Estilo para íconos sociales */
-.social-icons {
-    display: flex; /* Usa flexbox para alinear los iconos */
-    justify-content: center; /* Centra los iconos */
-    gap: 15px; /* Espacio entre los iconos */
-    margin-top: 20px; /* Espacio superior */
-}
-
-.social-icons a {
-    color: #fff; /* Color del texto */
-    font-size: 24px; /* Tamaño de los íconos */
-    transition: color 0.3s ease; /* Transición suave al cambiar el color */
-}
-
-.social-icons a:hover {
-    color: #eaccb3; /* Cambia el color al hacer hover */
-}
-
-/* Estilo para la parte inferior del footer */
-.footer-bottom {
-    margin-top: 30px; /* Espacio superior */
-    padding-top: 20px; /* Padding superior */
-    border-top: 1px solid #444; /* Borde superior */
-    font-size: 14px; /* Tamaño de fuente */
-}
-
-.footer-bottom p {
-    color: #ccc; /* Color del texto */
-}

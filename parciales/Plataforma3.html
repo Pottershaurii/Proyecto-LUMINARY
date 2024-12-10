@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos y Análisis de Eventos | Gestiona tu Evento</title>
+    <link rel="stylesheet" href="../css/plataforma3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/diseño.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
+                data-traducible="titulo">Luminary</span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" id="plataforma-toggle" class="flecha" data-traducible="plataforma">
+                        Plataforma <img src="../images/flecha.svg" alt="Flecha">
+                    </a>
+                    <ul class="subplataforma" id="subplataforma" style="display: none;">
+                        <li><a href="../parciales/Plataforma1.html">Agenda de Eventos</a></li>
+                        <li><a href="../parciales/Plataforma2.html">Marketing y promociones de eventos</a></li>
+                        <li><a href="../parciales/Plataforma3.html">Datos y Análisis de Eventos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
+                <li>
+                    <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
+                            src="../images/flecha.svg" alt="Flecha"></a>
+                    <ul class="submenu" id="submenu" style="display: none;">
+                        <li><a href="../parciales/recurso.html">Acerca de Luminary</a></li>
+                        <li><a href="../parciales/recurso2.html">Blog</a></li>
+                    </ul>
+                    <script src="../js/script.js"></script>
+
+                </li>
+                <li><a href="../parciales/Precio.html" data-traducible="precios">Precios</a></li>
+                <li><a href="../parciales/juego.html" data-traducible="minijuego">Mini Juego</a></li>
+            </ul>
+        </nav>
+        
+
+        <div class="language-selector" onclick="cambiarIdioma();">
+            <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
+            <span id="idioma">ES</span>
+            <img src="../images/flecha.svg" alt="Arrow" class="arrow-icon">
+        </div>
+        <div>
+            <a href="../parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
+                data-traducible="agendaDemo">Agenda una demo</a>
+            <a href="../Login.html" class="login" aria-label="Iniciar sesión" id="iniciar-sesion"
+                data-traducible="iniciarSesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <br></br>
+
+    <section id="analytics">
+        <div class="container">
+            <h1>Análisis de Eventos y Datos Clave</h1>
+            <p>Visualiza los datos clave de tus eventos, analiza la participación, la asistencia y otros aspectos críticos para mejorar la planificación de futuros eventos.</p>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total de Asistentes</h3>
+                    <p class="stat-number">4,200</p>
+                    <p class="stat-description">Número total de asistentes en el último evento organizado.</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Participación por Región</h3>
+                    <p class="stat-number">65%</p>
+                    <p class="stat-description">El 65% de los asistentes provienen de las principales ciudades del país.</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Ingresos Generados</h3>
+                    <p class="stat-number">$120,000</p>
+                    <p class="stat-description">Ingresos totales por entradas y patrocinios del evento.</p>
+                </div>
+            </div>
+
+            <div class="charts">
+                <h2>Gráficos y Tendencias</h2>
+                <div class="chart">
+                    <canvas id="attendanceChart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+    <script src="../js/plataforma3.js"></script>
+
+            <div class="cta-footer">
+                <h3>Solicita tu Informe Detallado</h3>
+                <p>Obtén un análisis completo de todos los aspectos de tu evento, con información personalizada y recomendaciones.</p>
+                <button class="cta-button">Solicitar Informe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer-section">
+            <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+            <div class="logo-container">
+                <div class="logo-item">
+                    <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                        <span>Universidad César Vallejo</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
+                        <span>Universidad Tecnológica del Perú</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
+                        <span>Universidad Nacional del Santa</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
+                        <span>Universidad Peruana de Ciencias Aplicadas</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                        <span>Pontificia Universidad Católica del Perú</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br /></br>
+        <div class="footer-bottom">
+            <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

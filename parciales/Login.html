@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/Login.css">
+    <title>Inicio de Sesión</title>
+    <script src="/js/Login.js"></script>
+</head>
+<body>
+    <div class="login"> 
+        <h1>Cuenta Luminary</h1>
+      <form action="" id="loginForm" onsubmit="login(event)">
+        <div class="logo-login">
+            <img src="/images/logoF.png" alt="logoRestauranteChristian">
+        </div>
+        <div class="description">
+            <p>Bienvenido al sistema de gestión de eventos Luminary. Por favor, ingresa tus credenciales para 
+            acceder y administrar tus actividades académicas con facilidad.</p>
+        </div>
+        <div class="box-text">
+            <input id="user" type="text" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="box-text">
+            <input id="password" type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="forgot-password">
+            <a href="#">¿Has olvidado tu contraseña?</a>
+        </div>
+        <button type="submit" class="btn">Iniciar Sesión</button>
+        <div class="register-form">
+            <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+        </div>
+    </form>    
+    </div>
+</body>
+</html>

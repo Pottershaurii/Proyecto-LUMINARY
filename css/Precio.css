@@ -62,7 +62,7 @@ body {
     grid-template-columns: repeat(3, minmax(20rem, 1fr));
     gap: 5rem;  
     grid-template-rows: repeat(2, auto);
-    margin-right: 15rem;  /* Añade espacio entre el título y el contenedor de productos */
+    margin-right: 15rem;
     margin-left: 15rem;  
 }
 

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog - Gestión de Eventos</title>
+    <link rel="stylesheet" href="../css/recurso2.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/diseño.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <img src="../images/logo.png" alt="Logo de Luminary" class="logo-icon"> <span
+                data-traducible="titulo">Luminary</span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#" id="plataforma-toggle" class="flecha" data-traducible="plataforma">
+                        Plataforma <img src="../images/flecha.svg" alt="Flecha">
+                    </a>
+                    <ul class="subplataforma" id="subplataforma" style="display: none;">
+                        <li><a href="../parciales/Plataforma1.html">Agenda de Eventos</a></li>
+                        <li><a href="../parciales/Plataforma2.html">Marketing y promociones de eventos</a></li>
+                        <li><a href="../parciales/Plataforma3.html">Datos y Análisis de Eventos</a></li>
+                    </ul>
+                <li><a href="../parciales/Cliente.html" data-traducible="clientes">Clientes</a></li>
+                <li>
+                    <a href="#" class="flecha" id="recursos-toggle" data-traducible="recursos">Recursos <img
+                            src="../images/flecha.svg" alt="Flecha"></a>
+                    <ul class="submenu" id="submenu" style="display: none;">
+                        <li><a href="../parciales/recurso.html">Acerca de Luminary</a></li>
+                        <li><a href="../parciales/recurso2.html">Blog</a></li>
+                    </ul>
+                    <script src="../js/script.js"></script>
+                </li>
+                <li><a href="../parciales/Precio.html" data-traducible="precios">Precios</a></li>
+                <li><a href="../parciales/juego.html" data-traducible="minijuego">Mini Juego</a></li>
+            </ul>
+            <script src="../js/script.js"></script>
+
+        </nav>
+
+        <div class="language-selector" onclick="cambiarIdioma();">
+            <img src="https://www.eventtia.com/wp-content/polylang/en_GB.svg" alt="Language" class="globe-icon">
+            <span id="idioma">ES</span>
+            <img src="../images/flecha.svg" alt="Arrow" class="arrow-icon">
+        </div>
+        <div>
+            <a href="../parciales/demo.html" class="demo-button" aria-label="Agenda una demostración" id="agenda-demo"
+                data-traducible="agendaDemo">Agenda una demo</a>
+            <a href="../Login.html" class="login" aria-label="Iniciar sesión" id="iniciar-sesion"
+                data-traducible="iniciarSesion">Iniciar sesión</a>
+        </div>
+    </header>
+    <br></br>
+
+    <section class="blog-container">
+        <h1>Blog de Eventos</h1>
+        <article class="post">
+            <h2>Cómo Organizar un Evento Exitoso</h2>
+            <p><strong>Fecha:</strong> 8 de diciembre, 2024</p>
+            <img src="../images/event.jpg" alt="Evento Exitoso" class="post-image">
+            <p>La organización de un evento exitoso requiere de una planificación meticulosa, el uso de herramientas tecnológicas y la atención al detalle. A continuación, te ofrecemos los pasos clave para asegurar que tu evento sea memorable:</p>
+            <a href="#" class="read-more" onclick="toggleContent(event)">Leer más</a>
+            <div class="extra-content">
+            <h3>1. Definir el Objetivo del Evento</h3>
+            <p>Antes de comenzar a planificar cualquier aspecto del evento, es fundamental definir qué deseas lograr. Este objetivo guiará todas las decisiones relacionadas con el evento.</p>
+
+            <h3>2. Elección de la Fecha y Lugar</h3>
+            <p>Seleccionar la fecha y el lugar adecuado es crucial para asegurar la asistencia de tu público objetivo. Un lugar accesible, cómodo y adecuado al tipo de evento será esencial.</p>
+
+            <h3>3. Planificación Detallada</h3>
+            <p>Una lista detallada de las tareas a realizar te permitirá cubrir todos los aspectos del evento, desde la contratación de proveedores hasta la gestión de la agenda.</p>
+
+            <h3>4. Estrategias de Marketing</h3>
+            <p>Promocionar tu evento de manera efectiva mediante canales de comunicación digital, como redes sociales, sitios web y campañas de correo electrónico, te ayudará a atraer a la audiencia deseada.</p>
+
+            <h3>5. Evaluación y Feedback</h3>
+            <p>Al final del evento, es importante evaluar su éxito. Realiza encuestas y recoge feedback para mejorar en futuras ediciones.</p>
+
+            <p>Con una adecuada planificación y las herramientas correctas, puedes asegurar que tu evento sea un rotundo éxito. ¡Comienza a planificar hoy!</p>
+        </article>
+
+        <article class="post">
+            <h2>Innovación en Marketing para Eventos</h2>
+            <p><strong>Fecha:</strong> 1 de diciembre, 2024</p>
+            <img src="../images/marketing.jpg" alt="Marketing para Eventos" class="post-image">
+            <p>El marketing para eventos ha evolucionado con el avance de la tecnología, creando nuevas oportunidades para captar la atención de los asistentes. Aquí te contamos algunas de las estrategias más innovadoras:</p>
+            <a href="#" class="read-more" onclick="toggleContent(event)">Leer más</a>
+            <div class="extra-content">
+                <h3>1. Uso de Tecnologías Emergentes</h3>
+                <p>La realidad aumentada (AR) y la inteligencia artificial (IA) están revolucionando la forma en que los eventos interactúan con los asistentes. Estas tecnologías permiten crear experiencias inmersivas que aumentan el interés y la participación.</p>
+    
+                <h3>2. Personalización de la Experiencia</h3>
+                <p>Gracias a los datos obtenidos de los asistentes, es posible personalizar la experiencia de cada uno de ellos. Esto incluye contenidos personalizados, agendas ajustadas a sus intereses y recomendaciones de actividades.</p>
+    
+                <h3>3. Marketing a Través de Redes Sociales</h3>
+                <p>Las plataformas sociales siguen siendo las principales herramientas para la promoción de eventos. Creación de contenido atractivo, uso de influencers y generación de hashtags específicos son tácticas efectivas.</p>
+    
+                <h3>4. Colaboraciones Estratégicas</h3>
+                <p>Colaborar con marcas influyentes o patrocinadores estratégicos puede aumentar significativamente la visibilidad de tu evento. Las alianzas permiten crear un mayor alcance y credibilidad.</p>
+    
+                <h3>5. Eventos Virtuales y Híbridos</h3>
+                <p>La pandemia de COVID-19 aceleró la adopción de eventos virtuales, pero incluso ahora, los eventos híbridos (presenciales y virtuales) siguen siendo una opción popular. Estos permiten llegar a un público más amplio, sin importar su ubicación.</p>
+    
+                <p>En conclusión, la innovación en marketing para eventos no solo mejora la experiencia de los asistentes, sino que también incrementa el impacto y la asistencia, asegurando el éxito de cualquier evento.</p>
+            </div>
+            <script src="../js/recurso2.js"></script>
+        </article>
+
+        <section class="newsletter">
+            <h2>Suscríbete a Nuestro Newsletter</h2>
+            <p>Recibe las últimas actualizaciones sobre eventos, tendencias y más.</p>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tu_perfil" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer-section">
+            <h3 data-traducible="clientesSatisfechos">Clientes Satisfechos</h3>
+            <div class="logo-container">
+                <div class="logo-item">
+                    <a href="https://www.ucv.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/ucv.png" alt="Logo UCV" class="logocolaborador">
+                        <span>Universidad César Vallejo</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/utp.png" alt="Logo UTP" class="logocolaborador">
+                        <span>Universidad Tecnológica del Perú</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uns.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/uns.png" alt="Logo UNS" class="logocolaborador">
+                        <span>Universidad Nacional del Santa</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.upc.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/upc.png" alt="Logo UPC" class="logocolaborador">
+                        <span>Universidad Peruana de Ciencias Aplicadas</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/pucp.png" alt="Logo PUCP" class="logocolaborador">
+                        <span>Pontificia Universidad Católica del Perú</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <br /></br>
+        <div class="footer-bottom">
+            <p data-traducible="derechosReservados">&copy; 2024 Luminary. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
